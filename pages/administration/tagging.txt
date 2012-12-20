@@ -1,0 +1,32 @@
+====== Tagging Plugin ======
+{{ tagging_search.png?direct&453|Tag results on the search result page}}
+The tagging Plugin allows users to annotate pages with tags, search for tags and show all tags one user has used.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/tagging|git repository]] ([[http://github.com/cosmocode/tagging/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The tagging plugin needs the [[sqlite|SQLite]] and the [[ajaxloader|ajaxloader plugin]].
+
+After installation you need to put the tag cloud with editing form into your template's main.php:
+
+<code php>
+<?php
+    //Tagging
+    $tagging = plugin_load('helper','tagging');
+    $tagging->tpl_tags();
+?>
+</code>
+
+===== Usage =====
+
+{{ tagging_edit.png?direct|The tagging edit formular with a tag cloud}}
+Apart from the tag cloud on pages, you can display all tags a user used in a tag cloud using the ''%%{{tagging::user>USERNAME}}%%'' syntax. With ''%%{{tagging::user}}%%'' you always get the tags of the user currently viewing the page. 
+In the same manner you can also list all tags in a specific namespace by using ''%%{{tagging::ns}}%%'' to get a list for the current namespace and 
+''%%{{tagging::ns>NAMESPACE}}%%'' to show tags from NAMESPACE and its subnamespaces.
+
+Moreover, the search results page has a new section where pages with the search term as tag are listed in a cloud.

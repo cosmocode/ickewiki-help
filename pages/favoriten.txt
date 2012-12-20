@@ -1,0 +1,21 @@
+====== Die Benutzung der Favoriten ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Um wichtige Dokumente stets griffbereit zu haben, existiert auf Ihrem persönlichen Dashboard eine Auflistung aller für Sie relevanter Seiten(("Meine gemerkten Seiten", erkennbar an dem Stern-Symbol)). Welche Seiten das sind, können Sie mit Hilfe der Lesezeichenfunktion des Wikis festlegen. Hier wird beschrieben, wie das geht.
+===== Lesezeichen setzen  =====
+
+Um eine Seite als Favorit hinzuzufügen, ist prinzipiell nur ein einziger Klick notwendig. Sobald Sie eingeloggt sind und sich auf der gewünschten Seite befinden, genügt ein Klick auf das Stern-Icon ({{star_grey.png?nolink}}) in der oberen rechten Ecke des Bildschirms (**Bild 1**). Sobald die Seite hinzugefügt wurde, werden Sie feststellen, dass sich der Farbton des Stern-Symbols von schwarz/weiß auf ein ansprechendes gelb ({{star.png?nolink}}) geändert hat (**Bild 2**). An der Farbe des Icons erkennen Sie somit auf einen kurzen Blick, ob für die jeweilige Seite bereits ein Lesezeichen gesetzt wurde. Sobald die Seite den Lesezeichen hinzugefügt wurde, erscheint Sie in der Übersicht auf Ihrem persönlichen Dashboard (**Bild 3**). Um eine Seite aus dieser Liste wieder zu entfernen, klicken Sie auf der betreffenden Seite wieder auf das Stern-Icon - die abermalige Farbänderung des Sterns sorgt für schnelles Feedback über den Erfolg der Aktion (**Bild 1**).
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?find_favo*.jpg?lightbox&3?50x50&3}}
+
+**Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
+
+{{youtube>3PeTj8Syf6I?medium}}
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie Favoriten vor allem für Seiten, zu denen ein langer Navigationsweg besteht.
+  * Löschen Sie von Zeit zu Zeit wieder Favoriten, die Sie lange nicht genutzt haben, um die Navigation über das Dashboard nicht zu unübersichtlich werden zu lassen.
+  * Nutzen Sie Favoriten, um schnell auf oft genutzte Seiten zuzugreifen.
+  * Denken Sie an die Alternative: [[hilfe:tags|taggen ]](markieren) Sie eine Seite mit einem bestimmten für Sie intuitiven Stichwort (=tag).

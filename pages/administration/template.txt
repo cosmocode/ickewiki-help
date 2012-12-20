@@ -1,0 +1,71 @@
+====== ICKE Template ======
+{{gallery>  :hilfe:administration:screen_template.png?300x300&lightbox}}
+
+The ICKE template is a two-sidebar, variable-width template integrating various plugins.
+
+===== Download and Installation =====
+
+Use the following URL to download this template:
+
+  * Unstable **development version** from the [[http://github.com/cosmocode/icke-template|git repository]] ([[http://github.com/cosmocode/icke-template/tarball/master|tgz]])
+
+Refer to [[doku>template]] on how to install and use templates in Dokuwiki.
+
+===== Configuration =====
+
+The template adds three options to the [[doku>config|config manager]]:
+
+  * ''tagline'': A line of text below the heading
+  * ''logo'': The media ID of the logo shown in the left upper corner
+  * ''user_ns'': The namespace prefix for user pages; user names will be linked to the start page of this namespace, and logged in users will have a link to their dashboards (page ''dashboard'' in their namespace) in the left sidebar
+  * ''tasks_page'': The id part specifying a page in the user namespace which lists [[do|open tasks]]; with a ''user_ns'' value ''users:'' and a users task page at ''users:USERNAME:tasks'', ''tasks_page'' should have the value ''tasks''; optionally, you may specify a global tasks page by prefixing the value with a colon: '':opentasks'' will link to the page ''opentasks'' for every user.
+
+==== local directory ====
+
+Moreover, the template has a local directory. There you can include local versions of various files:
+
+  * ''images/''
+  * ''style.css''
+  * ''tools.php''
+  * ''namespaces.php''
+
+In the ''namespaces.php'', the namespaces for the sidebar and the [[fancysearch]] are defined:
+
+<code php>
+<?php
+$icke_namespaces = array(
+  'namespace' => ('txt'     => 'Pretty caption',
+                  'liclass' => 'Optional HTML class for the sidebar item'
+                  'id'      => 'Optional link target if it differs from namespace'
+                 ),
+                        );
+</code>
+
+You need to provide several images in your ''local'' directory for each item:
+  * ''images/icons/60x60/NAMESPACE_inaktiv.png''
+  * ''images/icons/60x60/NAMESPACE_aktiv.png''
+  * ''images/icons/30x30/NAMESPACE_aktiv.png''
+
+==== Sidebar pages ====
+
+The right sidebar contains the logout/login bar, the search, the table of contents and the tagging plugin (if present). Below, content of the page ''schritt'' in the current namespace (or below) is displayed.
+===== Plugins =====
+
+Some plugins are necessary for the template to work:
+
+  * [[fancysearch]]
+  * [[jquery]]
+
+The template integrates various plugins in the screen, if present:
+
+  * [[qc]]
+  * [[do]]
+  * [[starred]]
+  * [[tagging]]
+
+For other plugins, the template has custom styling:
+
+  * [[usercontact]]
+  * [[doku>plugin:data|data]]
+  * [[doku>plugin:bureaucracy|bureaucracy]]
+  * [[edittable]]

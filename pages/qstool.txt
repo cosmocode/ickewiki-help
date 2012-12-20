@@ -1,0 +1,26 @@
+====== Das Qualitätstool ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Die Verwendung und Erstellung von Wiki-Seiten glänzt durch Ihre Ungezwungenheit: Der Spaß und die Leichtigkeit der Benutzung stehen im Vordergrund, daher wird im Rahmen von Wikis auf Konventionen möglichst verzichtet. Die Werthaltigkeit der dargestellten Informationen jedoch kann durch die Beachtung einiger minimaler Gestaltungsrichtlinien erheblich gesteigert werden. Aus diesem Grund existiert ein Mechanismus, um die (strukturelle, nicht inhaltliche) Qualität der jeweiligen Wiki-Seite einsehen zu können. 
+===== Beschreibung =====
+
+Die Qualitätseinschätzung der aktuellen Seite befindet sich stets am oberen Rand. Wie eingangs erwähnt, kann die Qualität des Inhaltes einer Seite nur schwer und unzuverlässig durch eine künstliche Intelligenz beurteilt werden. Machbar ist jedoch eine strukturelle Überprüfung der Inhalte. Anhand eines Icons am oberen Seitenrand ist bereits auf einen Blick das Qualitätsniveau der jeweiligen Seite erkennbar. 
+
+Nach einem Klick auf die blaue Leiste wird eine Seitenstatistik nach unten ausgebreitet und es werden Gründe für Qualitätseinbußen sowie mögliche Gegenmaßnahmen eingeblendet. 
+
+Folgende Punkte werden negativ bewertet:
+  * die Seite ist wenig durch Überschriften strukturiert, hat zu viel oder zu wenig Text pro Überschrift
+  * die Seite enthält mehrere Links auf Wiki-Seiten die (noch) nicht angelegt wurden.
+  * die Seite enthält einige sehr verschachtelte Zitate (>).
+  * die Seite wurde bisher nur von einem einzigen Nutzer bearbeitet.
+  * die Seite enthält einige sehr lange Passagen die formatiert wurden (wie fett, kursiv oder unterstrichen)
+  * die Seite enthält eine große Zahl an erzwungenen Zeilenumbrüchen (\\)
+  * die Seite enthält [[http://en.wikipedia.org/wiki/Fixme#Tags|FIXME]]-Markierungen zur Kennzeichnung unsicherer Inhalte
+
+**Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
+{{youtube>eg23yiZRaOI?medium}}
+
+===== Tipps und Hinweise =====
+  * Verbessern Sie die Qualität Ihrer Seiten durch eine gute Strukturierung mit einer Haupt- und mehreren Unterüberschriften.
+  * Vermeiden Sie zu viele unterschiedliche Formatierungen, nutzen Sie Strukturelemente wie Überschriften oder Aufzählungen, um Ordnung in den Seiteninhalt zu bringen.
+  * Vermeiden Sie erzwungene Zeilenumbrüche (\\), nutzen Sie statt dessen Absätze, indem Sie einfach eine Leerzeile hinter einen Absatz einfügen.

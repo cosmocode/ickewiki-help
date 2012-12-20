@@ -1,0 +1,22 @@
+====== AJAXloader Plugin ======
+The ajaxloader plugin is a helper plugin for various other plugins.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/ajaxloader|git repository]] ([[http://github.com/cosmocode/ajaxloader/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+===== Usage =====
+
+The ajaxloader plugin aids in implementing both sides of an AJAX call: Calling and providing the endpoint. You can freely combine both parts with each other or with DokuWiki’s own facilities.
+
+==== Calling ====
+
+The plugin provides two functions: ''doku_ajax(call, params)'' and ''serialize_form(form)''. ''doku_ajax'' should be used as a constructor. It expects the name of the ajax call in the format »plugin_PLUGINNAME« or »plugin_PLUGINNAME_CALLNAME«. You may optionally specify a hash with request parameters common to all requests made with this AJAX object. If you provide a form object, it is automatically serialized using ''serialize_form''.
+
+==== Providing ====
+
+The plugin provides a simpler way of developing the endpoint than hooking ''AJAX_CALL_UNKNOWN'': Just create a file ''ajax.php'' in your plugin directory. If you need multiple endpoints, create a directory ''ajax/'' instead and drop files ''CALLNAME.php'' in it. You may expect the same preprocessing as through ''lib/exe/ajax.php'', only a bit faster. Moreover, if you provide an array called ''$AJAX_JSON'', it is automatically echoed in JSON-encoding afterwards.

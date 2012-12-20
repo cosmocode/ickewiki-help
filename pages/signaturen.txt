@@ -1,0 +1,41 @@
+====== Unterschriften und digitale Signaturen ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Diese Seite befasst sich zum einen mit dem schnellen Einfügen einer digitalen Unterschrift durch einen klick auf das in der Symbolleiste des [[editing|Editors]] befindliche Stift-Icon ({{sig.png?nolink}}). Eine weitere Möglichkeit, Texte digital zu verifizieren, ist das Signieren (bzw. Validieren) einzelner Abschnitte über die Verwendung des  Schlüssel-Icons ({{cryptsign_button.png?nolink}}). Nachfolgend werden beide Verfahren kurz vorgestellt.
+
+===== Unterschriften einfügen =====
+
+Der Editor besitzt die Funktionalität, Unterschriften schnell und effizient einzufügen. Dies eignet sich besonders, wenn es wichtig ist zu wissen, von wem die eingetragene Information (oder Meinung, Kommentar) ist und welchen Aktualitätsgrad (s. am Zeitstempel der Eintragung) sie besitzt. Es genügt ein Klick auf das Stift-Icon ({{sig.png?nolink}}) und die Unterschrift wird an der jeweiligen [[wp>Cursor_(computers)#Text_cursor|Cursor]]-Position eingefügt. 
+
+Alternativ drücken Sie im Editor die Tastenkombination [Alt] + [y]. Das Resultat sieht in beiden Fällen wie folgt aus (natürlich mit Ihren persönlichen Daten und dem aktuellen Datum):
+
+--- //[[ewitt@aquatools.example.com|Elvis Witt]] 2010/09/13 11:30//
+
+**Codebeispiel:** Wiki-Syntax der oben dargestellten Unterschrift
+<code>
+--- //[[ewitt@aquatools.example.com|Elvis Witt]] 2010/09/13 11:30//
+</code>
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+{{gallery>:hilfe:?sign*.jpg?lightbox?50x50}}
+
+===== Textabschnitte validieren =====
+
+Mit Hilfe des Schlüssel-Icons ({{cryptsign_button.png?nolink}}) können Sie reine Textabschnitte (**keine** [[wiki:syntax|Wiki-Syntax]], wie [[wp>Hyperlink|Hyperlinks]] oder [[.:aufgaben|Aufgaben]] :!: ) signieren. Diese Funktion ist sinnvoll, wenn Sie beispielsweise darauf Wert legen, dass bestimmte, von Ihnen angelegte Texte nicht nachträglich bearbeitet werden sollen. Ein Anwendungsbeispiel ist der Beschluss eines Angebotsabbruchs.
+Dazu wird die entsprechende Nachricht zunächst eingegeben (**Bild 4**). Der zu signierende Text muss nun markiert werden, anschließend folgt ein Klick auf das Schlüssel-Icon (**Bild 5**). In dem erscheinenden Fenster wird der zu signierende Text mit „OK“ bestätigt (**Bild 6**). Wie zu erkennen ist, hat sich der vorher markierte Absatz am Anfang und vor allem am Ende um einige Zeichen vergrößert. Hierbei handelt es sich um eine automatisch generierte, elektronische Signatur, anhand derer das System die Echtheit des Eintrages nachvollziehen kann (**Bild 7**). Ein Klick auf „Speichern“ schließt die Aktion ab, das Resultat ist eine gültige Signatur (**Bild 8**). 
+
+Um den Nutzen weiter aufzuzeigen, soll nun nachträglich ein Wort verändert werden. Dazu wird zunächst wieder der Editor geöffnet und “//technischen//“ in “//ökonomischen//“ geändert, anschließend wird wieder abgespeichert (**Bild 9**). Das Resultat ist eine ungültige Signatur. Verweilt man mit dem Mauszeiger auf dem nun rot (sonst grün) hinterlegten Text, so bekommt man als [[wp>Tooltip]] Informationen über die Echtheit der Signatur und Ihren ursprünglichen Ersteller (**Bild 10**). 
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+{{gallery>:hilfe:?validate*.jpg?lightbox&7?50x50}}
+
+**Codebeispiel:** Die Syntax für den validierten Textabschnitt
+<code>
+{{Diese Anfrage kann aus technischen Gründen nicht bearbeitet werden! Die Anfrage wird daher abgelehnt! $$7f8156c3d751535ae90a2e1558904693--ewitt$$}}
+</code>
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie Unterschriften, um bspw. Meinung darzustellen oder zeitlich relevante Punkte zu beschreiben, der aktuelle Zeitstempel wird ebenfalls festgehalten.
+  * Nutzen Sie die Signaturfunktion nur für Textpassagen die in keinem Fall nachträglich verändert werden können.
+  * Sollten Sie Ihren selbst signierten Text ändern wollen, können Sie lediglich den gesamten Eintrag löschen und neu zu schreiben und zu signieren.
+  * Es können nur reine, unformatierte Textpassagen signiert werden.

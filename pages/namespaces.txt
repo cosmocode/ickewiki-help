@@ -1,0 +1,68 @@
+====== Die Bedeutung der Namespaces (Namensräume) ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Das Wiki ist unterteilt in verschiedene Abschnitte, die Namensräume oder Namespaces  genannt werden. Diese sind nichts anderes als Ordner, in denen die Seiten des Wikis abgelegt werden. Man kann sie sich also wie Schubladen in einem Regal vorstellen. 
+Möchte man etwas in das Wiki schreiben, sollte man sich zuerst überlegen, in welche Schublade das Thema passt.
+===== Welche Namensräume gibt es schon? =====
+
+Ihr Wiki ICKEwiki ist bereits mit einigen Namnesräumen ausgestattet. Die wichtigsten befinden sich als Icons in der Navigationsleiste am linken Bildschirmrand.
+
+Das [[http://demo.ickewiki.de|Demo-Wiki der AquaTools Produktion AG]] hat beispielsweise folgende Namespaces in der linken Navigationsleiste : 
+
+  * Allgemeines {{allgemeines_aktiv.png?30&nolink}}
+  * Fachwissen {{fachwissen_aktiv.png?30&nolink}}
+  * Projekte {{projekt_aktiv.png?30&nolink}}
+  * Kunden und Anfragen {{kunde_aktiv.png?30&nolink}}
+  * Produkte {{produkt_aktiv.png?30&nolink}}
+  * Hilfe {{hilfe_aktiv.png?30&nolink}}(dort befinden Sie sich gerade)
+
+**Hinweis:**
+Diese beiden zusätzlichen Icons sind Hilfsfunktionen, die nicht Namensräumen zugeordnet sind:
+  * Dashboard {{dashboard_aktiv.png?30&nolink}} (in jeder ICKEwiki-Installation)
+  * Einstellungen {{einstellungen_aktiv.png?30&nolink}}
+
+===== Zusammenspiel von Seiten und Namensräumen =====
+  * Namensräume können sowohl Seiten als auch Namensräume enthalten. 
+  * Ein Namensraum macht nur dann Sinn, wenn darin mehrere Seiten enthalten sind bzw. potenziell hinzu kommen. 
+  * Es gibt keine leeren Namensräume, entweder enhalten sie Seiten oder wiederum Namensräume.
+  * Wird in einen Namensraum verlinkt (ein Doppelpunkt [:] oder Schrägstrich [/] am Ende), so wird dabei immer auf die Seite "start" innerhalb dieses Namensraumes verlinkt. Entsprechend wird dieses Seite auch angelegt, wenn Sie auf einen nicht existierenden Namensraum verlinken und anschließend diesem Link folgen. Überlegen Sie daher immer, ob Sie auf eine Seite (projekte:projektXY) oder einen Namensraum (projekte:projektXY: ist identisch mit projekte:projektXY:start) verlinken wollen.  
+
+===== Anlegen von Namensräumen =====
+
+Um tiefer verschachtelte Namensräume (also Schubladen innerhalb der Schubladen) zu erstellen, muss nicht jeder Namensraum seperat angelegt werden. Sobald bspw. die Seite:
+
+<code>
+projekte:projektXY:meetings:meetings_mit_chef:zuwendungsverhandlungen:start
+</code>
+
+angelegt wird, werden alle noch benötigten Namensräume automatisch erstellt. Der Präfix vor dem **letzten** Doppelpunkt bzw. Schrägstrich wird der Namensbereich, der Teil dahinter wird der Seitenname. Ein neuer Namensbereich sollte möglichst die Seite "start" als Übersichtsseite beinhalten, wenn Sie nach dem Doppelpunkt bzw. Schrägstrich **keine Angabe** für den Seitentitel machen, wird dieser automatisch auf " ''start'' " gesetzt.
+
+Die Verwendung von Doppelpunkten bzw. Schrägstrichen für die Trennung von Namensräumen wird vom Administrator eingestellt. Beide Varianten sind parallel möglich, in der Adressleiste wird entsprechend der Administratoreneinstellung jeweils nur eine Variante angezeigt.
+
+===== Verlinken innerhalb von Namensräumen =====
+
+Die Navigation innerhalb der einzelnen Verzeichnisse ist über die Verwendung von Punkt und Doppelpunkt möglich. Hier finden Sie Beispiele von Link-Angaben und auf welche Seiten diese verweisen. 
+
+Nehmen wir zu Erklärungszwecken an, sie befinden sich momentan auf der Seite:
+<code>
+http://demo.ickewiki.de/projekt/schwimmset/start
+</code>
+Es bestehen dann folgende Möglichkeiten, um Verweise zu setzen:  
+
+^                                                                       Codebeispiele: So können Sie auf die verschiedenen "Schubladen" verweisen                                                                        ^^
+| %%[[beispiel]]%%                      | zeigt auf die Seite "beispiel" im **momentanen Namensbereich** (%%http://demo.ickewiki.de/projekt/schwimmset/beispiel%%)                                                        |
+| %%[[:beispiel]]%%                     | zeigt auf die Seite "beispiel" im **Wurzel-Namensbereich** (%%http://demo.ickewiki.de/beispiel%%)                                                                               |
+| %%[[..beispiel]]%%                    | zeigt auf die Seite "beispiel" im **Parent-Namensbereich** - d.h. dem übergeordneten Namensraum (%%http://demo.ickewiki.de/projekt/beispiel%%)                                  |
+| %%[[..:beispiel]]%%                   | :::                                                                                                                                                                             |
+| %%[[.:..:beispiel]]%%                 | :::                                                                                                                                                                             |
+| %%[[wiki:beispiel]]%%                 | zeigt auf die Seite "beispiel" im Namensbereich "wiki" und "wiki" liegt direkt im **Wurzel-Namensbereich** (%%http://demo.ickewiki.de/wiki/beispiel%%)                          |
+| %%[[ns1:ns2:beispiel]]%%              | zeigt auf die Seite "beispiel" im Namensbereich ns2 -> ns2 liegt unter ns1 -> ns1 liegt im **Wurzel-Namensbereich** (%%http://demo.ickewiki.de/ns1/ns2/beispiel%%)              |
+| %%[[:ns1:ns2:beispiel]]%%             | :::                                                                                                                                                                             |
+| %%[[..ns1:ns2:beispiel]]%%            | zeigt auf die Seite "beispiel" im Namensbereich ns2 -> ns2 liegt unter ns1 -> ns1 liegt im **Parent-Namensbereich** (%%http://demo.ickewiki.de/projekt/ns1/ns2/beispiel%%)      |
+| %%[[..:ns1:ns2:beispiel]]%%           | :::                                                                                                                                                                             |
+| %%[[.ns1:ns2:]]%%                     | zeigt auf die „Startseite“ im Namensbereich ns2; ns2 liegt unter ns1; ns1 liegt im **momentanen Namensbereich** (%%http://demo.ickewiki.de/projekt/schwimmset/ns1/ns2/start%%)  |
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie den [[editing#verweise|Linkwizard]] zur einfachen Verlinkung von Seiten / [[namespaces|Namensräumen]]
+  * Nutzen Sie die Einschränkung der [[hilfe:find|Suchfunktionen ]]auf Namensräume um schneller zu gesuchten Informationen zu gelangen. 
+  * Überlegen Sie immer, ob Sie auf eine Seite (projekte:projektXY) oder einen Namensraum mit Startseite(projekte:projektXY: ist identisch mit projekte:projektXY:start) verlinken wollen. 

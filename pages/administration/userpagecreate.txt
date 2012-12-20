@@ -1,0 +1,20 @@
+====== Userpagecreate Plugin ======
+The userpagecreate plugin creates a user page or user namespace when a user first logs in.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/userpagecreate|git repository]] ([[http://github.com/cosmocode/userpagecreate/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+After installation, you have to [[#Configuration|configure]] the plugin. Before doing so, you should create a template page or namespace. You can use the [[doku>namespace_templates|standard replacement patterns]]. Moreover, values from the ''$USERINFO'' array are passed as replacement patterns.
+
+===== Configuration =====
+
+The plugin adds three options to the [[doku>config|config manager]]:
+
+  * ''target'': The user page ID prefix
+  * ''template'': The user page template (page or namespace)
+  * ''create_summary'': The summary for the page creation(s)

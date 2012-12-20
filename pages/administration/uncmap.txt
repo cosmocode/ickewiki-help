@@ -1,0 +1,22 @@
+====== UNCMap Plugin ======
+{{ uncmap.png?direct&344}}
+
+The uncmap plugin maps windows drive letter file names to UNC links.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/uncmap|git repository]] ([[http://github.com/cosmocode/uncmap/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+===== Usage =====
+
+Just use the normal link syntax with drive letters.
+
+===== Configuration =====
+
+The plugin adds an optional option to the [[doku>config|config manager]] where you can configure a mount point for the fileserver. This directory is used to check whether a linked file exists.
+
+Moreover, the file ''conf/mapping.php'' in the plugin directory is used to specify drive to mount mappings.

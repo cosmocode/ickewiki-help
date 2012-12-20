@@ -1,0 +1,27 @@
+====== Seiten anlegen ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Hier erfahren Sie, wie Sie das Wiki durch das Anlegen neuer Artikel verbessern können. Dies kann auf zwei verschiedene Arten geschehen: entweder durch das manuelle Anlegen neuer Seiten oder durch die Benutzung von Wizards, die (vom Benutzer mit Eingabedaten gefüttert) ein ganzes Paket von Seiten automatisch generieren.  
+
+===== Manuelles Anlegen von Seiten =====
+
+Bevor Sie eine neue Wiki-Seite anlegen, müssen Sie zunächst die Entscheidungen über den Namen der Seite und den [[namespaces|Namespace]] treffen. Sie können mit einem internen Hyperlink auf einer bereits existierenden Seite starten, indem Sie dort bereits den Namespace festlegen und den Seitennamen vergeben. Dieser Link ist dann rot markiert, d.h. er führt noch ins Leere. Nach einem Klick auf den Link gelangt man zu der noch nicht existierenden Seite und bekommt die entsprechende Meldung angezeigt. Nach einem Klick auf "Seite anlegen" kann das neue Wiki-Dokument nun mit Inhalten gefüllt werden. Ein weiteres Verfahren, Seiten manuell anzulegen, ist die Eingabe der Adresse der zu erstellenden Zielseite mit der Endung "?do=edit". In dem verwenden Beispiel würde also der Aufruf der Seite 
+''[Wurzelverzeichnis]/projekt/schwimmweste_70_90kg/dokumentation?do=edit''
+den Klick auf "Seite anlegen" ersetzen.
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?pagecreate_1_*.jpg&50x50&crop?lightbox}}
+
+===== Automatisches Anlegen von Seiten mit Wizards =====
+
+Ein weiterer Weg, neue Seiten anzulegen, ist die Benutzung von [[wp>Wizard_(software)|Wizards]]. Als Beispiel sei hier das Anlegen eines neuen Projektes angeführt. Nach einem Klick auf [[projekt:neu|Neues Projekt anlegen]] in der Navigationsleiste am linken Bildschirmrand öffnet sich das entsprechende Eingabeformular (**Bild 1**). Nach der Festlegung von Projektname, Kunde, Anfrage und der Zusammenstellung des Projektteams (**Bild 2**) wird die Aktion mit einem Klick auf die Schaltfläche "Projekt anlegen" abgeschlossen. Die nun angezeigte Übersicht aller angelegten Seiten bestätigt, dass die jeweiligen Unterseiten und Verzeichnisse erfolgreich erstellt wurden (**Bild 3**). Auf der Startseite des Projekts finden sich die zu Beginn getätigten Eingaben aus dem Formular wieder (**Bild 4**).
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?pagecreate_2_*.jpg&50x50&crop&lightbox}}
+
+===== Tipps und Hinweise =====
+  * Wizards greifen auf Vorlagen zurück und füllen diese mit eingegebenen Informationen auf. Änderungen am Wizard / an der Vorlage kann der Administrator oder auch versierte Nutzer vornehmen. 
+  * Wizards / Vorlagen sind unternehmensspezifisch. Ggf. wurden in Ihrer Installation auch keine Wizards angelegt.
+  * Es gibt auch automatische Wizards: bspw. bei Ihrem ersten Login wird Ihr Nutzerprofil und Ihre Dashboardseite angelegt.

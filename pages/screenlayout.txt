@@ -1,0 +1,23 @@
+====== Bildschirmaufbau ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Die Oberfläche des ICKEwiki gliedert sich in verschiedene Bereiche auf. Neben zwei Navigationsleisten an der linken und rechten Bildschirmseite existiert eine Vielzahl weiterer Informationselemente, wie etwa nützliche Buttons oder auch ein Eingabefeld für die gezielte [[find|Suche nach Inhalten]]. Nachfolgend werden die einzelnen Bereiche kurz vorgestellt.
+===== Die Elemente =====
+
+  * **Navigationsleiste:** Die zentrale Navigation geschieht über die Menüleiste am linken Bildschirmrand. Bewegt man den Mauszeiger über eines der Icons, so erscheint ein zusätzliches Auswahlmenü mit den entsprechenden Unterseiten. Bei dem „Projekte“-Icon erscheint auf diese Weise eine Liste mit den 5 aktuellsten Projekten.
+  * **Qualitätsfeedback:** Am oberen Rand befindet sich die automatische Qualitätsbewertung der aktuellen Seite. Dabei wird nicht der Inhalt sondern die Strukturierung der Seite bewertet. Durch einen Klick auf den blauen Rand wird eine Seitenstatistik nach unten ausgebreitet. Gründe für Qualitätseinbußen und mögliche Gegenmaßnahmen werden eingeblendet. Welche Punkte negativ bewertet werden können Sie [[hilfe:qstool|hier]] nachlesen.
+  * **Favoriten & Abonnements:** Mit diesen 2 Buttons in der rechten, oberen Bildschirmecke kann jeder Benutzer Änderungen auf für ihn relevanten Seiten [[hilfe:abonnements|abonnieren]] und Seiten als [[favoriten|Favoriten]] dem persönlichen [[wpde>Kennzahlen-Cockpit|Dashboard]] hinzufügen.
+  * **Suchbereich:** Ein Klick auf den nach unten zeigenden, schwarzen Pfeil bringt ein Auswahlmenü zum Vorschein: hier kann die Suche auf bestimmte [[namespaces|Namensräume]] eingeschränkt werden. Um welchen Namensraum es sich jeweils handelt, verrät das entsprechende Icon.
+  * **Inhaltsverzeichnis:** Das Inhaltsverzeichnis gibt eine schnelle Übersicht über alle Abschnitte (deutlich gemacht durch Zwischenüberschriften) der gerade betrachteten Seite. Um direkt zu der gewünschten Stelle auf der Seite zu springen reicht ein Klick auf die jeweilige Überschrift im Inhaltsverzeichnis.
+  * **Taggingbereich:** Nach Anmeldung können Benutzer hier jeder Seite ihre eigenen Schlagworte ([[wp>Tag_(metadata)|Tags]]) zuordnen ([[wpde>Gemeinschaftliches_Indexieren|Social Tagging]]). Mehr dazu unter [[tags|Schlagwörter ("Tags")]].
+  * **Sub-Navigation:** Für jedes angelegte Projekt werden automatisch Unterseiten für die entsprechenden [[wpde>Meilenstein_(Projektmanagement)|Meilensteine]] generiert. Um auf diese leicht zugreifen zu können, befindet sich an der unteren, rechten Bildschirmseite ein Navigationsmenü. Durch einen Klick auf „Übersicht“ kann man dieses anpassen, ein Klick auf „Start“ führt zur aktuellen Projekthauptseite.
+
+**Die Bildschirmaufteilung Stück für Stück:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?screen_*.jpg&50x50&crop&lightbox}}
+
+**Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
+{{youtube>OxvLJAaZ118?medium}}
+
+===== Tipps und Hinweise =====
+  * Die Symbole auf der Navigationsleiste können je nach betrieblichen Anforderungen variieren, die Abbildung könnte daher geringfügig von Ihrer Installation abweichen.

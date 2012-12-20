@@ -1,0 +1,68 @@
+====== Automatische Listen mit dem data-plugin ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Oft ist es sehr mühselig, dynamisch wachsende Übersichten (wie beispielsweise eine Liste mit Mitarbeitern einer bestimmten Abteilung) stets auf dem aktuellen Stand zu halten. Das "data-plugin" vereinfacht diesen Prozess erheblich, indem es dafür sorgt, dass solche Übersichten automatisch (nach den von Ihnen festgelegten Kriterien) gepflegt werden.
+
+===== Aufbau und Wirkungsweise =====
+
+Die Organisation der Inhalte geschieht hierbei durch das Festlegen und Auslesen von [[http://de.wikipedia.org/wiki/Metadaten|Meta-Daten]], also den "Daten über Daten". Einem Mitarbeiter können etwa verschiedene Attribute (wie //Name//, //Abteilung// oder //Büro-Nummer//) zugeordnet werden. Dies erlaubt das Generieren übersichtlicher Listen durch die Ausnutzung verschiedener Filterfunktionen. 
+
+{{wheel.jpg?nolink }}Unter der Überschrift mancher Wiki-Seiten befinden sich sogenannte "Data-Entries": Wie das Wort "Entry"(([engl.] "Eingang")) bereits andeutet, können hier die Meta-Daten eingegeben bzw. verändert werden. Blöcke dieser Art erkennt man an dem Zahnrad-Symbol in der oberen, linken Ecke.
+
+{{arrow.jpg?nolink }}An anderen Stellen werden diese Daten ausgelesen, hierbei handelt es sich sowohl um Listen ("Data-List") als auch Tabellen ("Data-Tables"). Diese Übersichten können anhand der in den "Data-Entries" vergebenen Meta-Daten sortiert werden (s. unteres Beispiel) und aktualisieren sich automatisch. Erkennbar sind sie an dem Pfeil-Symbol in der oberen, linken Ecke.
+
+===== Ändern von Meta-Daten =====
+
+Die Anzeige der festgelegten [[wp>Metadata|Meta-Daten]] befindet sich, wie bereits erwähnt, stets in einem eigenen Bereich oberhalb der entsprechenden Seite, in **Bild 1** sehen Sie beispielsweise den Meta-Daten-Block für die Anfrage "Schwimmbrille für Kinder". Ein Klick auf "Bearbeiten"((gemeint ist der Button an der unteren, linken Ecke des entsprechenden Blocks! Nach einem Klick auf den Stift am rechten Bildschirmrand oder auf "Seite bearbeiten" am Ende der Seite findet sich an oberer Stelle ebenfalls der Meta-Daten-Block, hier jedoch in **Wiki-Syntax und ohne den komfortablen Meta-Daten-Editor**. Änderungen dort können **empfindliche Auswirkungen auf die Funktionsweise des gesamten ICKEwikis** haben! Aus diesem Grund wird allen Benutzern (außer Admins und [[http://de.wikipedia.org/wiki/Power-User|Power-Usern]]) von einer Bearbeitung der Wiki-Syntax dieser Blöcke **dringend abgeraten**!)) öffnet den Meta-Daten-Editor (**Bild 2**). Hier können die vergebenen Attribute eingesehen und verändert werden. Ein Klick auf "Speichern" schließt die Aktion ab. 
+
+**Auge aufs Detail:** Der Meta-Daten-Editor (zum Vergrößern klicken):
+{{gallery>:hilfe:?metadata_*.jpg&50x50&crop&lightbox}}
+
+**Codebeispiel**: Der 'Quellcode' des bei dem obigen Beispiel (Anfrage "Schwimmbrille für Kinder") vorgestellten Meta-Daten Blocks (sollte nicht verändert werden):
+
+<code>
+---- dataentry angebot ----
+Kunde_kunde                  : Suedexport Und Vertriebsges. Mbh
+Anfragedatum_dt              : 2010-06-11
+Ansprechpartner_mitarbeiters : ewitt, 
+Status_anfragestatus_        : in Bearbeitung
+----
+</code>
+
+
+===== Automatische Datenlisten als Aufzählungen =====
+
+**Codebeispiel**: Zeige alle Datensätze der Kategorie "user", deren Attribut "Abteilung" den Wert "Entwicklung" hat. 
+<code>
+---- datalist ----
+cols    : %title%
+filter  : %class% = user
+filter  : Abteilung_abteilung = Entwicklung
+sort    : ^%title%
+----
+</code>
+
+Mit der Zeile ''cols    : %title%'' werden Anzahl und Inhalt der Spalten bestimmt, in diesem Beispiel existiert folglich nur eine Spalte, deren Inhalt die Titel der heraus gefilterten Seiten sein sollen. Nach welchem Kriterium sortiert werden soll, wird mit ''sort    : ^%title%'' festgelegt (hier: alphabetisch nach dem Attribut "Titel" geordnet) (**Bild 3**). 
+
+===== Automatische Datenlisten in Tabellenform =====
+Die Erstellung von **Tabellen** (mehrere Spalten), die automatisch gepflegt werden, ist auf die selbe Art und Weise möglich. 
+
+**Codebeispiel**: Zeige alle alle Datensätze der Kategorie "projekt" deren Attribut "Kunde" **nicht** den Wert "##Kunde##" hat.
+<code>
+---- datatable ----
+cols    : %title%, Kunde_kunde, Projektteam_mitarbeiters, Projektstart_dt
+headers : Projekt
+filter  : %class% = projekt
+filter  : Kunde_kunde != ##Kunde##
+sort    : ^Projektstart
+----
+</code>
+
+Zunächst werden wieder die Spalten festgelegt (''cols''), wir wollen den Seitentitel, den Kunden, das Projektteam und das Datum für den Projektstart anzeigen lassen. Über ''headers'' können individuelle Namen für die Spalten vergeben werden: Die erste Spalte soll den Namen "Projekt" tragen, bei den folgenden 3 Spalten nehmen wir mit der Standardbezeichnung vorlieb. Nach den Filteroptionen folgt wieder die Vorgabe für die Sortierung (**Bild 4**).
+
+**Beispiel:** Automatisch angelegte Übersichten (zum Vergrößern klicken):
+{{gallery>:hilfe:?dataplugin_*.jpg&50x50&crop&lightbox}}
+
+===== Tipps und Hinweise =====
+  * Als "Durchschnitts-"Nutzer sollten Sie lediglich die Metadaten auf den einzelnen Seiten über den Metadaten-Editor bearbeiten, da die Abfragesyntax ein umfangreiches Know-how voraussetzt.
+  * Normalerweise sind die Datentabellen bzw. -listen vorkonfiguriert. Ändern Sie diese nicht selbständig, sondern teilen Sie Änderungswünsche Ihrem Administrator mit. Hier müssen vielfältige Abhängigkeiten der Metadaten beachtet werden.

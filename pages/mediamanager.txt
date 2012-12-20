@@ -1,0 +1,94 @@
+====== Der Mediamanager ======
+
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Oft empfiehlt es sich, seinen Gedanken mit Bildern oder Videos Ausdruck zu verleihen. Im [[http://ickewiki.de|ICKEwiki]] sorgt der "Mediamanager" für ein einfaches und schnelles Einbinden von Grafiken, indem er Sie nicht nur beim Upload unterstützt, sondern gleichzeitig verschiedene Möglichkeiten der Formatierung((die Größe des Bildes, seine Ausrichtung, etc.; s. unten)) Ihrer Grafiken auf der Wiki-Seite bietet. Diese und weitere Features werden nachfolgend erläutert.
+
+Beachten Sie:
+  * Um ein Bild im Wiki anzeigen zu können, muss es vorher mit dem Mediamanager hochgeladen werden ((Ausnahme: Externe Bilder)). Die Datei muss sich dazu auf Ihrem Rechner befinden.
+  * Auch der Mediamanager arbeitet mit Namespaces! Wenn sie den Mediamanager aus einem Dokument heraus starten, befindet er sich automatisch im gleichen Namensraum wie das Dokument. 
+  * Es empfiehlt sich, die Mediaelemente ebenfalls sinnvoll in Namespaces zu organsieren, damit Sie nicht die Übersicht verlieren. Der Mediamanager unterstützt Sie hierbei - sie können den Namespace der Bilder im Mediamanager frei wählen.
+===== Upload des Bildes =====
+ 
+Der Upload (das "Hochladen") einer Grafik erfolgt aus der Editor-Ansicht heraus. Als Beispiel soll das Logo des Kunden [[http://demo.ickewiki.de/kunde/imparax_gmbh/start|"IMPARAX GmbH"]] auf die entsprechende Seite eingebunden werden. 
+  * In der Editoransicht einer Seite öffnet ein Klick auf das Mediamanger-Icon  {{image.png?nolink}} in der Toolbar den Mediamanager im aktuellen Namensraum (**Bild 1**). 
+  * Mit dem Button "Durchsuchen.." (**Bild 2**) starten Sie den DateiDialog Ihres Rechners (**Bild 3**). 
+  * Nach einem Klick auf "Öffnen" schließt sich der Auswahl-Dialog wieder. Zurück im Mediamanager können Sie unter "Hochladen als" den Namen der Datei noch ändern, bevor Sie über den Button "Hochladen" den Upload der Grafik (wohlgemerkt in den aktuell befindlichen Namensraum) abschließen(**Bild 4**). 
+  * **Bild 5** zeigt das hochgeladene Bild im Mediamanager.    
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?media_1_*.jpg?lightbox?50x50}}
+
+===== Suchen von Dateien  =====
+Alle im WIki hochgeladenen Bilder ((in allen Namespaces)) können über den Mediamanager auf jeder beliebigen Wiki-Seite eingebunden werden. 
+  * Nutzen Sie im Mediamanager den Verzeichnisbaum auf der linken Seite (**Bild 6**), um sich zu dem Unternamespace zu bewegen, in welchem sich die gewünschte Grafik befindet. 
+  * Auf der rechten Seite werden die Grafiken angezeigt, die sich im aktuell ausgewählten Zweig befinden. Über das Feld "Suche Dateinamen" kann im momentanen Namespace gesucht werden. 
+  * Startet man die Suche vom Wurzelverzeichnis aus werden also alle Namespaces durchsucht (**Bild 7**). 
+  * Sobald das gesucht Bild gefunden wurde, genügt ein Klick auf den Namen oder das Bild um den Format-Dialog zu starten.
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?media_2_*.jpg?lightbox?50x50}}
+
+===== Der Parameterauswahl-Dialog =====
+Nach einem Klick auf die Grafik öffnet sich der Dialog für die Unterstützung des Einbindens auf der Wikiseite:
+{{ media_3_1.jpg?200&nolink |}}
+
+
+Dieser Dialog gliedert sich in drei Abschnitte mit je vier Auswahloptionen (jeweils eine ist bereits ausgewählt):
+  * Linkziel:
+    * Nur den Link anzeigen: Es erscheint kein Bild, nur der Pfad zu der entsprechenden Grafik.
+    * Link zur Detailseite: Nach einem Klick auf die Grafik öffnet sich eine Seite mit Detailinformationen (Datum, Dateiname, Format und Dateigröße).
+    * Kein Link: Die Grafik ist nicht verlinkt (der Cursor wird nicht zur Hand sondern bleibt ein Pfeil).
+    * Link zur Originaldatei: Nach einem Klick auf die Grafik öffnet sich diese im Browser-Fenster (ohne jeglichen Kontext). 
+  * Anordnung (rechtsbündig, keine Anordnung, linksbündig oder zentriert)
+  * Bildgröße (original, klein, mittel oder groß)
+
+Die hier festgelegten Parameter lassen sich stets durch die Benutzung von Wiki-Syntax wieder ändern. Experimentieren Sie ruhig mit verschiedenen Kombinationen und vergleichen Sie die unterschiedliche Syntax (siehe hierfür den Abschnitt "[[wiki:syntax#images_and_other_files|images and other files]]" in der DokuWiki-Hilfe). Im unteren Codebeispiel etwa finden sich:
+  *(1) Eine linksbündige Grafik, skaliert auf 200 Pixel Breite und nicht verlinkt.
+  *(2) Eine zentrierte Grafik, skaliert auf 300 Pixel Breite mit dem Link zur Detailseite.
+  *(3) Eine rechtsbündige Grafik, skaliert auf 100 Pixel Breite mit dem Link zur Originaldatei.
+
+**Codebeispiel**: Die selbe Grafik in verschiedenen Variationen: 
+<code>
+(1) {{:kunde:imparax_gmbh:imparax_logo.jpg?nolink200  }}
+(2) {{ :kunde:imparax_gmbh:imparax_logo.jpg?300 }}
+(3) {{  :kunde:imparax_gmbh:imparax_logo.jpg?direct100}}
+</code>
+
+{{:kunde:imparax_gmbh:imparax_logo.jpg?nolink200  }}
+{{ :kunde:imparax_gmbh:imparax_logo.jpg?300 }}
+{{  :kunde:imparax_gmbh:imparax_logo.jpg?direct100}}
+
+===== Umbenennen und Löschen =====
+Jedes Bild besitzt im Mediamanager eine eigene Iconleiste:
+{{ media_4_1.jpg?400&nolink |}}
+
+Die Bedeutung der Icons ist wie folgt:
+  * {{magnifier.png?nolink}} - Anzeigen der Grafik (wie der "Link zur Originaldatei")
+  * {{trash.png?nolink}} - Löschen der Grafik
+  * {{pencil.png?nolink}} - Bearbeiten der Meta-Informationen (wie Name und Beschreibung)
+
+===== Einbinden von Videos =====
+Das ICKEwiki unterstützt ebenso das Einbinden von Videos bekannter Video-Sharing-Seiten, wie beispielsweise der Plattform [[http://www.youtube.com|YouTube]]. 
+
+Dazu sind im Wesentlichen nur 2 Klicks notwendig: 
+  * Sobald sie die URL des entsprechenden Videos in die Zwischenablage kopiert haben (**Bild 10**), klicken Sie auf das Video-Icon ({{vshare_button.png?nolink}}),
+  * fügen Sie die entsprechende Adresse in das aufkommende Fenster ein (**Bild 11**). 
+  * Der zweite Klick auf den "Ok"-Button schließt die Aktion ab, ein mögliches Resultat ist weiter unten auf dieser Seite dargestellt.
+
+{{gallery>:hilfe:?media_5_*.jpg?lightbox?50x50}}
+
+**Codebeispiel:** Wiki-Syntax des unten auf dieser Seite eingebundenen Beispielvideos.
+<code>
+{{youtube>lZKyW-5Se2M?medium}}
+</code>
+
+**Das Beispielvideo:**
+
+{{youtube>lZKyW-5Se2M?medium}}
+
+===== Tipps und Hinweise =====
+  * Mit dem Mediamanager können Sie auch mehrere Bilder gleichzeitig hoch laden. Klicken Sie im Mediamanager auf das Icon: {{multiupload.png?nolink}}
+  * Der Umgang mit Dateien und Bildern ist identisch. Nutzen Sie für Dateien ebenfalls den Mediamanager.

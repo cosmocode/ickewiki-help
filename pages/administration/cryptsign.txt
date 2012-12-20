@@ -1,0 +1,14 @@
+====== Signature Plugin ======
+The cryptsign plugin allows users to sign parts of a wiki page.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/cryptsign|git repository]] ([[http://github.com/cosmocode/cryptsign/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+===== Usage =====
+
+Use the new toolbar button to sign a wiki text. The text will then get a green background and a closed lock as long as it is unchanged, and red background and broken lock if it is changed. This does not protect against text removals or adding new, unsigned text – it just assures that a specific text has been written by a specific user on a specific page ID in a specific Wiki.

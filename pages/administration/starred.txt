@@ -1,0 +1,34 @@
+====== Favorites Plugin ======
+{{ starred_star.png?direct|The star icon on a wiki page}}
+The starred plugin allows users to remember pages.
+
+This (German) screencast show the plugin in action:
+
+  * [[http://www.youtube.com/watch?v=3PeTj8Syf6I|ICKEwiki ScreenCast: Favoriten und Abonnements]]
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/starred|git repository]] ([[http://github.com/cosmocode/starred/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The tagging plugin needs the [[sqlite|SQLite plugin]].
+
+After installation, you should include a link for users to save a page as favourite. Put the following into your template's main.php:
+
+<code php>
+<?php
+    //Starred
+    $starred = plugin_load('action','starred');
+    $starred->tpl_starred();
+?>
+</code>
+
+Optionally, you might call ''tpl_starred(true)'' instead: This omits the image and just gives the (empty) link.
+
+===== Usage =====
+
+{{ starred_results.png?direct|Overview over all starred pages}}
+To list the current user's saved pages, add ''%%{{starred}}%%'' to a page. An optional minimal mode gives no text if the current user has starred no pages and leaves out the saving date: ''%%{{starred>min}}%%''. Finally, you might limit the number of shown pages: ''%%{{starred>min|5}}%%'' and ''%%{{starred|5}}%%'', respectively.

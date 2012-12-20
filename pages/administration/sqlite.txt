@@ -1,0 +1,152 @@
+====== SQLite Plugin ======
+The sqlite plugin is a helper plugin for various other plugins.
+
+**Important:** because of a bug in DokuWiki you can only use **one** plugin using the sqlite plugin for DokuWiki versions prior to 2010-03-29!
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/sqlite|git repository]] ([[http://github.com/cosmocode/sqlite/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+===== Admin Interface =====
+
+{{ http://img33.imageshack.us/img33/7122/20100127110355668x453sc.png?300|Admin Interface}}
+
+The plugin comes with a simple admin interface where you can run your own SQL queries against any of the available databases.
+
+Available databases (''data/meta/*.sqlite'') are show in the table of contents. Select one and you can submit your own queries.
+
+===== Usage =====
+
+To use this helper plugin in your own plugins, load it and call the init() function to connect to the database. Make sure you check if the plugin was loaded correctly and if the init() function ran without error, before executing your own code.
+
+<code php>
+// load the helper plugin
+$sqlite = plugin_load('helper', 'sqlite');
+if(!$sqlite){
+    msg('This plugin requires the sqlite plugin. Please install it');
+    return;
+}
+// initialize the database connection
+if(!$sqlite->init('myplugin',DOKU_PLUGIN.'myplugin/db/')){
+    return;
+}
+// use the plugin
+$res = $sqlite->query("SELECT * FROM mytable");
+$arr = res2arr($res);
+print_r($arr);
+</code>
+
+==== Functions ====
+
+=== init ===
+
+Initializes and opens the database. Needs to be called right after loading this helper plugin
+
+  * $dbname is the name of the database.
+  * $updatedir is a path where update SQL files are located (see below)
+
+<code php>
+ $plugin->init($dbname,$updatedir);
+</code>
+
+=== query ===
+
+Execute a query with the given parameters.
+
+Takes care of escaping
+
+  * $sql - the statement
+  * arguments...
+    * Arguments can also be given as a single array
+
+<code php>
+$plugin->query($sql[,arg1[,arg2[...]]]);
+</code>
+
+=== res2arr ===
+
+Returns a complete result set as array
+
+  * $res - a query result
+
+<code php>
+$plugin->res2arr($res){
+</code>
+
+=== res2row ===
+
+Return the wanted row from a given result set as associative array
+
+  * $res - the result from a query
+  * $numrow - number of results
+
+<code php>
+$plugin->res2row($res,$rownum=0){
+</code>
+
+=== quote and join ===
+
+Join the given values and quote them for SQL insertion
+
+  * $vals - values to join
+  * $sep - separator char
+
+<code php>
+$plugin->quote_and_join($vals,$sep=',');
+</code>
+
+=== quote string ===
+
+Run [[phpfn>sqlite_escape_string]] on the given string and surround it with quotes
+
+<code php>
+$plugin->quote_string($string);
+</code>
+
+==== DB Schema Setup/Update Mechanism ====
+
+Your plugin will need to create a database schema and maybe fill it with some initial data. When you release new versions of your plugin you might need to update the schema. The sqlite plugin provides a simple mechanism to do so.
+
+This is all handled within the ''init()'' function. The second parameter has to point to a directory where your SQL files are located. Each file correspondents to a certain database version. Version 1 is the very first setup that is done when the database is created. Each subsequent version is then applied above the previous version.
+
+The number of the most recent version has to be stored in a file called ''latest.version''. The update files it self have to be named ''updateXXXX.sql'' where XXXX is a zeropadded 4 digit number, starting with ''0001''.
+
+The update mechanism will wrap the execution of each update in a transaction, you need not to do that yourself. If an update fails, the transaction is rolled back and the update is aborted.
+
+The sqlite plugin keeps track of the version a database is in currently using a table called ''opt''. You may not have a table named like that!
+
+==== SQL Extensions ====
+
+The plugin provides a few additional features over the standard SQLite 2 syntax.
+
+=== ALTER TABLE ===
+
+The plugin supports a simplified ''ALTER TABLE'' syntax. This is probably most useful in the update mechanism. The plugin emulates the alter table call by copying the affected data to a temporary table and dropping, recreating and refilling the original table. When used outside the update mechanism, it is recommended to wrap the call in a transaction.
+
+<code bnf>
+ALTER TABLE tbl_name alter_specification [, alter_specification] ...
+
+alter_specification:
+    ADD column_definition
+  | DROP column_definition
+  | CHANGE old_col_name column_definition
+
+column_definition:
+    same as for create table statements
+</code>
+
+Examples:
+
+<code sql>
+ALTER TABLE employees ADD first_name, ADD last_name
+ALTER TABLE invoices ADD note text, CHANGE idate invoice_date DATETIME
+ALTER TABLE foo DROP bar, ADD bar2 INTEGER
+</code>
+
+=== GROUP_CONCAT ===
+
+The GROUP_CONCAT function is a copy of the same function as defined in MySQL. FIXME add more info.

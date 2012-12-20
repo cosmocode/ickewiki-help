@@ -1,0 +1,41 @@
+====== Suchen und Finden von Informationen ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Das [[http://ickewiki.de|ICKEwiki]] dient als Wissensspeicher des Unternehmens. Neben einer strukturierten Ablage von Informationen ist es daher ebenso wichtig, diese auch auf schnellem Wege (wieder) zu finden. Aus diesem Grunde sind einige effiziente Mechanismen implementiert, die dem Benutzer bei diesem Vorgang Unterstützung bieten: 
+  * das Suchfeld in der oberen, rechten Bildschirmecke
+  * die Übersicht am rechten Seitenrand (Inhaltsverzeichnis auf Überschriftenbasis) 
+  * die Funktion [[find?do=recent|„letzte Änderungen“]] unter den Werkzeugen oder 
+  * die Aufnahme einzelner Seiten in die Liste der persönlichen Favoriten ([[hilfe:favoriten|Die Benutzung der Favoriten]])
+  * die Baumnavigation wie sie aus der Navigation im Dateisystem bekannt ist unter den Werkzeugen (siehe [[find?do=index|Übersicht]])
+  * Navigation über die linke Navigationsleiste über verschiedenen [[hilfe:namespaces|Namensräume]] (Ordner).
+
+Neben diesen existieren noch die folgenden Möglichkeiten (nähere Informationen dazu finden Sie in den jeweiligen Hilfe-Artikeln):
+
+  * das Abonnieren von Inhalten (siehe [[.:abonnements|hier]]) sowie
+  * die Zuordnung von Schlagworten zu bestimmten Seiten ("//tagging//"; siehe [[.:tags|hier]])
+
+===== Kurze Beschreibung der einzelnen Methoden =====
+
+  * **das Suchfeld:** In der oberen rechten Ecke befindet sich das Feld für die Eingabe von Suchbegriffen. In welchem [[hilfe:namespaces|Namensraum]] dabei gesucht werden soll, kann mit einem Klick auf den schwarzen Pfeil und der anschließenden Auswahl des entsprechenden Symbols festgelegt werden:
+
+{{gallery>:hilfe:?find_suche_*.jpg&50x50&crop&lightbox&9}}
+
+  * **die Übersicht am rechten Seitenrand:** Am rechten Seitenrand befindet sich eine weitere Navigationshilfe: Anhand der vergebenen Überschriften bei der Erstellung einer Seite (siehe auch: [[hilfe:editing|Bearbeiten von Dokumenten]]) wird für diese automatisch ein Inhaltsverzeichnis angelegt. Darüber hinaus existiert bei Projekten unter dem Tagging-Bereich eine weitere Übersicht zur Unterstützung der Navigation innerhalb der jeweiligen Prozessschritte:
+
+{{gallery>:hilfe:?find_subnav_*.jpg&50x50&crop&lightbox&9}}
+
+  * **die Funktion "letzte Änderungen":** Ein Klick auf "Ältere Versionen anzeigen" am Ende einer jeden Wiki-Seite ermöglicht dem Benutzer den Zugriff auf vorherige Bearbeitungsstände der jeweiligen Seite. Ein kurzer Hinweis am Kopf der Seite verweist darauf, dass die betrachtete Version nicht die aktuelle ist und gibt gleichzeitig Auskunft über das Datum des momentan angezeigten Status:
+
+{{gallery>:hilfe:?find_changes_*.jpg&50x50&crop&lightbox&9}}
+
+  * **Aufnahme einzelner Seiten in die Liste der persönlichen Favoriten:** Es gibt eine weitere Möglichkeit, einen schnellen Zugang zu den individuellen Artikeln im Wiki zu bekommen, die für Sie als Benutzer relevant sind. Dies geschieht, indem Sie durch einen Klick auf das Stern-Symbol in der oberen rechten Ecke des Bildschirms Seiten als Favoriten Ihrem persönlichen Dashboard hinzufügen (siehe auch: [[hilfe:favoriten|Die Benutzung der Favoriten]]).
+
+**Screencast** (Klicken Sie auf das Bild, um das Video zu starten) 
+{{youtube>AfZU-5zpytw?medium}}
+===== Tipps und Hinweise =====
+  * weitere Hinweise entnehmen Sie bitte den entsprechenden spezifischen Hilfeseiten, siehe: [[hilfe:|Übersicht]]
+  * Nutzen Sie die Such- und Navigationsstrategie, die zu Ihnen oder Ihrem aktuellen Anwendungsfall passt:
+    * Navigieren Sie, wenn Sie wissen, wo die Information eingeordnet ist.
+    * Nutzen Sie die Suchfunktion, wenn Sie nicht wissen, ob eine Information überhaupt vorliegt.
+    * Nutzen Sie Ihre persönlichen Stichworte (Tags) in der Suchfunktion, falls Sie die gesuchte Information bereits "getaggt" (mit Stichworten versehen) haben.
+    * Nutzen Sie die automatischen Übersichten, wenn Sie wissen, es handelt sich um Informationen zu einem bestimmten Objekt (bspw. Produkt, Projekt, Kunde sofern diese Konzepte in Ihrem Wiki umgesetzt wurden).

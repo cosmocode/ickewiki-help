@@ -1,0 +1,115 @@
+====== Bearbeiten von Dokumenten ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Ein zentraler Aspekt bei der Arbeit mit Wikis ist die Bearbeitung von Seiten und Artikeln. Das ICKEwiki bietet mit dem Editor ein mächtiges Werkzeug für die Manipulation von Texten, Tabellen, Bildern und allen anderen Elementen, die auf einer Wiki-Seite auftreten können. Der Editor ist die bedeutendste Schnittstelle zwischen Ihnen und Ihrem Wiki! Die einzelnen Funktionen können (und sollten) Sie jedoch bedenkenlos ausprobieren, denn alles lässt sich mit Leichtigkeit wieder rückgängig machen!
+
+Im Folgenden werden die einzelnen Knöpfe im Editor und Ihre Funktionen kurz erläutert, weitere Informationen können [[wiki:syntax|hier]] entnommen werden.
+
+
+Die Symbolleiste des Editors teilt sich auf in die folgenden Bereiche:
+
+===== Textmanipulation =====
+Die bekannten Funktionen für die einfache Bearbeitung von Text. Markieren Sie die jeweilige Textpassage und klicken Sie auf den entsprechenden Button, __//Kombinationen//__ (max. zwei) sind ebenfalls möglich, werden aber in der Qualitätsbewertung negativ angemerkt (siehe Tipps unten). Alternativ stehen Ihnen auch die folgenden Tastaturkürzel zur Verfügung:
+
+  *{{bold.png?nolink}} - fetter Text - [Alt]+[B]
+  *{{italic.png?nolink}} - kursiver Text - [Alt]+[I]
+  *{{underline.png?nolink}} - unterstrichener Text - [Alt]+[U]
+  *{{mono.png?nolink}} - Code Text - [Alt]+[C]
+  *{{strike.png?nolink}} - durchgestrichener Text - [Alt]+[D]
+
+**Codebeispiel:** **fett** - //kursiv// - __unterstrichen__ - ''Code-Text'' - <del>durchgestrichen</del>
+<code>
+**fett**
+//kursiv//
+__unterstrichen__
+''Code-Text''
+<del>durchgestrichen</del> 
+</code>
+
+===== Überschriften einfügen ===== 
+Diese Gruppe unterstützt Sie bei dem Einfügen verschiedener Überschriften. Es können fünf verschiedene Stufen ausgewählt werden.
+
+  *{{hequal.png}} - gleichzeilige Überschrift - [Alt]+[8]
+  *{{hminus.png}} - untere Überschrift - [Alt]+[9]
+  *{{hplus.png}} - obere Überschrift - [Alt]+[0]
+  *{{h.png}} - Wähle die Überschrift
+
+**Codebeispiel:** Die 5 verschiedenen Gliederungsebenen
+<code>
+====== Überschrift 1. Grades ======
+===== Überschrift 2. Grades =====
+==== Überschrift 3. Grades ====
+=== Überschrift 4. Grades ===
+== Überschrift 5. Grades ==
+</code>
+
+Tastenkombinationen für schnelles Einfügen von Überschriften:
+  * Überschrift 1. Grades [Alt]+[1]
+  * Überschrift 2. Grades [Alt]+[2]
+  * Überschrift 3. Grades [Alt]+[3]
+  * Überschrift 4. Grades [Alt]+[4]
+  * Überschrift 5. Grades [Alt]+[5]
+
+===== Verweise =====
+Hier lassen sich zum einen Hyperlinks zu internen Seiten des Wikis über einen komfortablen Wizard einfügen, der zweite Button unterstützt Sie bei Verweisen auf externe Seiten aus dem WWW:
+  * {{link.png}} - internen Link einfügen - [Alt]+[L]
+  * {{linkextern.png}} - externen Link einfügen
+
+{{gallery>:hilfe:?editor_3_*.jpg&51x51&crop}}
+
+**Codebeispiel:** Interne und externe Hyperlinks im Wiki.
+<code>
+[[namespace1:namespace2:seitentitel|Interner Link]]
+[[http://example.com|Externer Link]]
+</code>
+===== Textstrukturierung =====
+Diese Schaltflächen ermöglichen die Strukturierung von Text in Form von Einrückungen (nummerierte Liste oder Punktliste) bzw. horizontalen Linien. Markieren Sie dazu wieder den jeweiligen Textanschnitt und klicken Sie auf das entsprechenden Icon, bzw. verwenden Sie den entsprechenden Hotkey:
+
+  * {{ol.png}} - nummerierter Listenpunkt - [Alt]+[-]
+  * {{ul.png}} - Listenpunkt - [Alt]+[.]
+  * {{hr.png}} - horizontale Linie
+
+**Codebeispiel:** Punkt-Aufzählung, Strich-Aufzählung und horizontale Linie.
+<code>
+  * Punktaufzählung1
+  * Punktaufzählung2
+    * Punktaufzählung2.1
+    * Punktaufzählung2.2
+
+----
+
+  - Nummerierung1
+  - Nummerierung2
+    - Nummerierung2.1
+    - Nummerierung2.2
+</code>
+
+  * Punktaufzählung1
+  * Punktaufzählung2
+    * Punktaufzählung2.1
+    * Punktaufzählung2.2
+
+----
+
+  - Nummerierung1
+  - Nummerierung2
+    - Nummerierung2.1
+    - Nummerierung2.2
+
+===== weitere Einfügungen =====
+
+Am hinteren Ende der Symbolleiste des Editors befinden sich die Icons zum komfortablen Einfügen spezieller Inhalte. Dazu gehören:
+
+  * {{image.png}} - [[mediamanager|Grafiken]]
+  * {{smiley.png}} - [[wp>smiley|Smileys]]
+  * {{chars.png}} - Sonderzeichen (∂; Ø; ±; ∑; etc.)
+  * {{sig.png}} - [[signaturen|Unterschriften]] - [Alt]+[Y]
+  * {{add_table.png}} - [[tabelleneditor|Tabellen]]
+  * {{vshare_button.png}} - [[mediamanager|Videos]]
+  * {{do_button.png}} - [[aufgaben|Aufgaben]]
+  * {{cryptsign_button.png}} - [[signaturen|Signaturen]] - [Alt]+[Q]
+
+===== Tipps und Hinweise =====
+  * Gehen Sie sparsam mit unterschiedlichen Formatierungen um. Vermeiden Sie kursiv, fett __und__ unterstrichen zu verwenden. Arbeiten Sie besser mit Strukturierungen (Überschriften, Aufzählungen).
+  * Überschriften gliedern einen Text und dienen außerdem der Navigation über die Übersicht rechts unterhalb des Suchfeldes. Standardmäßig werden nur Überschriften 1. und 2. Grades in diese Übersicht aufgenommen.
+  * Anhand der Überschriften wird auch das so genannte "Section Editing" festgelegt. D.h. an den Überschriften 1. und 2. Grades werden jeweils "Bearbeiten-Buttons" eingefügt. Machen Sie es Ihnen und anderen Autoren leicht kleinere "Portionen" zu bearbeiten.

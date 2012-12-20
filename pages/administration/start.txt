@@ -1,0 +1,31 @@
+====== ICKEwiki Plugin Doku ======
+
+ICKEwiki basiert auf DokuWiki. Viele Funktionen des ICKEwiki sind in Plugins umgesetzt, die auch separat verfügbar sind. Darüberhinaus werden andere Plugins verwendet, die nicht gesondert für ICKE entwickelt wurden. Auch das bei ICKEwiki eingesetzte Template kann frei heruntergeladen werden.
+
+Bitte nehmen Sie zur Kenntnis, dass die Dokumentationsseiten auf Englisch verfasst sind.
+
+===== ICKE-DokuWiki-Plugins =====
+
+  * [[ajaxloader]]
+  * [[cryptsign]]
+  * [[do]]
+  * [[edittable]]
+  * [[fancysearch]]
+  * [[log]]
+  * [[qc]]
+  * [[quicksubscribe]]
+  * [[tagging]]
+  * [[sqlite]]
+  * [[starred]]
+  * [[uncmap]]
+  * [[usercontact]]
+  * [[userpagecreate]]
+
+===== Generische DokuWiki-Plugins =====
+
+  * [[doku>plugin:data|data]]
+  * [[doku>plugin:bureaucracy|bureaucracy]]
+
+===== Template =====
+
+  * [[template]]

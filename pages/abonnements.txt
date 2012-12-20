@@ -1,0 +1,45 @@
+====== Die Verwendung von Abonnements  ======
+
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+In einigen Anwendungsfällen ist es sinnvoll, über Änderungen von bestimmten Seiten des Wikis benachrichtigt zu werden (Freigabe von Dokumenten o.ä.). Für dieses Szenario steht eine Funktion zur Verfügung, welche über das [[favoriten|Setzen von Favoriten]] hinaus geht: 
+die Abonnement-Funktion. 
+
+Die Benachrichtung geschieht per E-Mail und kann als tägliche Zusammenfasssung oder bei jeder einzelnen Änderung geschehen. Es können ganze Namensräume und einzelne Seiten abonniert werden. 
+
+===== Einrichtung von Abonnements =====
+
+Um ein Abonnement einzurichten ist es (wie bei dem Setzen von Favoriten) zunächst erforderlich, die entsprechende Wiki-Seite aufzusuchen. Dort angekommen finden Sie in der oberen, rechten Ecke die Glocke als Schaltfläche für Abonnements: {{abo-no.png?nolink20}}
+Nach einem Klick auf dieses Symbol öffnet sich der Abonnement-Dialog (**Bild 1**). Dieses bestätigt die erfolgreiche Abonnierung des Namensraums. Sie erhalten ab sofort täglich eine Zusammenfassung über Änderungen im aktuellen Namensraum. Sie können außerdem konkrete Einstellungen zu dem aktuellen Abonnement vornehmen, indem Sie "Bearbeiten" wählen.
+Sie können Abonnements auch durch das "Einstellungen"-Icon in der linken Navigationsleiste konfigurieren, welches die Menüpunkte "Änderungen abonnieren" und "Aboverwaltung" enthält. 
+
+===== Bearbeiten von Abonnements =====
+
+Die Verwaltung von Abonnements (**Bild 2**) kann entweder über das Anklicken der Glocke und das Anwählen von "Bearbeiten" im  folgenden Dialog oder aber über den Punkt "Aboverwaltung" im Einstellungsmenü der Navigationsleiste (**Bild 3**) aufgerufen werden.
+In der Verwaltung lassen sich zwei zentrale Optionen festlegen: 
+  * Sie können wählen, ob Sie entweder nur die Änderungen der aktuellen Seite oder alle Änderungen in dem Entsprechenden [[namespaces|Namensraum]]  abonnieren möchten
+  * darunter lässt sich festlegen, wie häufig (bzw. wie schnell) die Benachrichtigungen eintreffen sollen: 
+    * "Email bei jeder Bearbeitung": Sie bekommen eine solche unverzüglich nach jeder Änderung zugeschickt
+    * "Zusammenfassung der Änderungen für jede veränderte Seite": Sie erhalten je abonnierter Seite täglich eine Zusammenfassung aller Änderungen
+
+Ein Klick auf „Abonnieren“ sichert die Einstellungen, ein nun farbiges Glockensymbol signalisiert den erfolgreichen Abschluss: {{abo-yes.png?nolink20}}
+
+===== Kündigen von Abonnements =====
+
+Sie können ein Abonnement auf die gleiche Weise kündigen, auf der Sie es eingerichtet haben. Durch Anklicken der leuchtenden Glocke ({{abo-yes.png?nolink20}}) erscheint erneut der Abonnement-Dialog  (**Bild 4**), in welchem der "Löschen"-Button selbiges mit dem angezeigten Abonnement tut.
+
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?screen_abo_*.jpeg?lightbox?50x50&titlesort}}
+
+**Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
+
+{{youtube>3PeTj8Syf6I?medium}}
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie die Abonnement-Funktion entsprechend der Bedeutung einer Seite für Ihre Arbeit: 
+    * Sie wollen nur auf dem Laufenden bleiben und sehen, was sich tut? Abonnieren Sie ganze Namensräume und lassen sich nur die Zusammenfassungen zusenden.
+    * Sie sind für ein Thema / eine Seite verantwortlich? Abonnieren Sie die entsprechende Seite und lassen sich einmal täglich über die Änderungen informieren.
+    * Sie sind für ein Projekt oder einen Bereich im Wiki verantwortlich? Abonnieren Sie den entsprechenden Namensraum und lassen sich zusammmenfassend informieren.
+  * Bedenken Sie die Informationsflut: nicht jede Änderung ist sofort relevant. Vermeiden Sie bspw. das gesamte Wiki zu abonnieren und sich über jede Änderung informieren. Sie erhalten ansonsten u.U. eine Vielzahl von Änderungsmails. 

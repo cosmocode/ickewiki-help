@@ -1,0 +1,5 @@
+The ICKEWiki help files. Currently German only. To install, copy or symlink
+the pages and media files to their correct place in the data directory.
+
+Note for editing: all links and graphics sources should be relative! Do not
+expect certain plugins to be available.

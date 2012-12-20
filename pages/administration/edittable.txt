@@ -1,0 +1,15 @@
+====== Table Editor Plugin ======
+{{ edittable.png?direct&449|The table editor plugin in action}}
+The edittable Plugin provides a visual table editing and inserting interface.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/edittable|git repository]] ([[http://github.com/cosmocode/edittable/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+===== Usage =====
+
+An edit button gets attached to every table. Clicking it gives you an edit form with an editable table, the default toolbar and a special toolbar for tables. Moreover, the default toolbar has a ''Create table'' button which switches to table edit mode and after clicking ''Save'' in the table editor, returns to the edited text.

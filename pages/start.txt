@@ -1,0 +1,14 @@
+====== ICKEwiki Hilfe ======
+
+[[.:grundlagen:|Grundlagen zu ICKEwiki]]\\
+Sie haben noch keine Erfahrung mit ICKEwiki? Fangen Sie hier an.
+
+
+[[.:funktionen:|Funktionen von ICKEwiki]]\\
+ICKEwiki kann mehr als ein normales Wiki. Lernen Sie die neuen Möglichkeiten kennen!
+
+[[.:administration:|Die Administration von ICKEwiki]]\\
+Hier finden Sie alles über die Anpassung und Konfiguration der ICKEwiki Software.
+
+----
+Übrigens: Auch diese Hilfe besteht aus Wiki-Seiten. Das bedeutet, Sie können diese Hilfe nach ihrem Bedarf erweitern, verbessern und anpassen.

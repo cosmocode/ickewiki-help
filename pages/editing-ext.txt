@@ -1,0 +1,18 @@
+====== Fortgeschrittene Wiki-Syntax ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Die Toolbar des [[editing|Editors]] stellt bereits allerlei Funktionen zur Verfügung. Über die dort vorhandenen Buttons hinaus existiert eine Vielzahl weiterer Möglichkeiten, die Wiki-Seiten nach Ihren persönlichen Vorstellungen mit Inhalten zu füllen. Unten stehend finden Sie eine Auswahl einiger wesentlicher //Syntax-Funktionen// und Verweise auf weiterführende Informationsquellen.
+
+===== Syntax-Dokumentation von DokuWiki =====
+
+Die wichtigsten Syntax Funktionen können [[wiki:syntax|hier]] nachgelesen werden. 
+
+===== weiterführende Links =====
+
+Die DokuWiki-Plattform bietet eine Vielzahl nützlicher [[wp>Plugin|Plugins]], mit denen weitere Syntax Befehle hinzugefügt werden können, wie bspw. das [[doku>plugin:clock|Clock-Plugin]] oder das [[doku>plugin:color|Color-Plugin]]. Die DokuWiki-Plugins sind alle auf OpenSource-Basis und werden kontinuierlich vermehrt und verbessert, derzeit((am 01.09.2010)) existieren 688 Plugins. Eine Liste aller verfügbaren Plugins gibt es [[doku>plugins|hier]].
+
+===== Tipps und Hinweise =====
+
+  * Bemühen Sie sich um Klarheit und Verständlichkeit. Überlegen Sie, ob andere Nutzer des Wikis mit der verwendeten Syntax vertraut sind, oder ob sich dieses Verhältnis herbeiführen ließe.
+
+  * Auch hier gilt, was schon bei der [[editing|Bearbeitung von Dokumenten]] angeraten wurde: Weniger ist oft mehr. Versuchen sie die Absicht ihrer Syntax eindeutig zu halten und vermeiden Sie die Verwendung mehrerer Formatierungen zugleich.

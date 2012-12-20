@@ -1,0 +1,26 @@
+====== Quicksubscribe Plugin ======
+{{ quicksubscribe.png?direct|}}
+The quicksubscribe plugin provides a simpler interface to [[doku>subscription|page subscriptions]]. 
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/quicksubscribe|git repository]] ([[http://github.com/cosmocode/quicksubscribe/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The quicksubscribe plugin needs the [[ajaxloader|ajaxloader plugin]].
+
+After installation you need to put the subscribe icon into your template's main.php:
+
+<code php>
+<?php
+    $quicksubscribe = plugin_load('helper', 'quicksubscribe');
+    $quicksubscribe->tpl_subscribe();
+?>
+</code>
+
+===== Usage =====
+
+The icon shows your current subscription status: If the icon is grey, you are not subscribed, otherwise you are. By clicking on the icon, you open a popup which either subscribes you to the current namespace or shows the current subscription and allows to delete it. Moreover, a link to the subscription manage page is given.

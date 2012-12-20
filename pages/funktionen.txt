@@ -1,0 +1,44 @@
+====== Funktionen im ICKEwiki ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], **Funktionen von ICKEwiki**
+
+ICKEwiki besitzt eine Reihe von Funktionen, die sie bei der Arbeit unterstützen.
+===== Aufgaben =====
+
+Deklarieren Sie Arbeitsbeschreibungen als Aufgabe, um diese im Überblick zu behalten. Aufgaben können mit Terminen versehen und Personen zugeordnet werden. Unerledigte Aufgaben erscheinen automatisch im Dashboard.
+
+[[aufgaben|Die Arbeit mit Aufgaben]]
+===== Favoriten =====
+
+Mit den Favoriten behalten Sie die für Sie wichtigsten Dokumente stets im schnellen Zugriff.
+
+[[favoriten|Die Benutzung der Favoriten]]
+ 
+===== Abonnements =====
+
+Mit Abonnements werden sie automatisch informiert, wenn jemand Änderungen an Dokumenten vornimmt, die für Sie wichtig sind.
+
+[[abonnements|Die Verwendung von Abonnements]]
+===== Unterschriften und digitale Signaturen =====
+
+Hier wird beschrieben wie Texteinträge im Wiki signiert werden können. Damit können wichtige Informationen / Entscheidungen einzelner Personen fixiert (im Sinne von digital unterschrieben) werden.
+
+[[signaturen|Die Verwendung von Signaturen]]
+
+===== Logbücher =====
+
+Ein Logbuch ist ein Werkzeug, um Statusinformationen zu Projekten und anderen Dokumenten in chronologischer Reihenfolge festzuhalten.
+
+[[logbuch|Die Verwendung von Logbüchern]]
+===== Das Qualitätstool =====
+
+Bei aller Freiheit, Wiki-Dokumente nach eigenem Gusto zu erstellen: Konventionen erhöhen die Nutzbarkeit. Das Qualitätstool mit seinen automatischen Tests hilft Ihnen dabei. Dabei wird die Strukturierung, nicht der Inhalt bewertet.
+
+[[qstool|Das Qualitätstool]]
+===== Stichwörter ("Tags") =====
+Mit Stichwörtern können sie Dokumente nach individuellen Merkmale gruppieren.
+
+[[tags|Stichwörter]]
+===== Kennzeichnung von Überarbeitungswünschen mit FIXMEs =====
+Inhaltliche Fehler im Wiki sollte man sofort korrigieren, im Wiki darf man das auch. Einen Fehler zu entdecken ist aber leichter als ihn zu korrigieren. FIXMEs bieten die Möglichkeit, fehlerhafte Texte als solche zu identifizieren, ohne sie sofort korrigieren zu müssen. Alternativ verwenden Sie FIXMEs für Punkte Ihrer Texte bei denen Sie unsicher sind.
+
+[[fixmes|FIXMEs]]

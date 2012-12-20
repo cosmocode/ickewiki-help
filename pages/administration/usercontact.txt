@@ -1,0 +1,22 @@
+====== Usercontact Plugin ======
+{{ usercontact.png?direct|Usercontact popup with location, department, room number, email address, phone and fax number}}
+The usercontact plugin shows a popup on links to pages identified as user pages. These popups list additional informations on the user.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/usercontact|git repository]] ([[http://github.com/cosmocode/usercontact/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The usercontact plugin needs the [[ajaxloader|ajaxloader plugin]].
+
+After installation, you have to [[#Configuration|configure]] the plugin.
+
+===== Configuration =====
+
+The plugin adds two options to the [[doku>config|config manager]]:
+
+  * ''users_namespace'': A regular expression matching user page IDs
+  * ''fields'': A list of userinfo fields shown in the popup

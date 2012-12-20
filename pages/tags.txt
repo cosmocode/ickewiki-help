@@ -1,0 +1,19 @@
+====== Schlagwörter ("Tags") ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Die Verfügbarkeit von Wissen ist nicht minder wichtig als die Speicherung desselben, aus diesem Grund verfügt ICKEwiki über zahlreiche Mechanismen, abgelegte Informationen schnell und einfach zugänglich zu machen. Eine Möglichkeit hierfür ist die Zuordnung von Schlagworten ("Tags") zu bestimmten Seiten, um diese bei Bedarf schnell wiederfinden zu können((durch die spätere Eingabe dieser Schlagworte in das Suchfeld)). 
+===== Beschreibung des Vorgehens =====
+
+Der Taggingbereich befindet sich stets an der rechten Bildschirmseite unter dem Suchfeld (s. auch unter [[screenlayout|Bildschirmaufbau]]) und ist erst nach einer Anmeldung sichtbar((für Gastbenutzer also deaktiviert)). Nach einem Klick "bearbeiten" kann das jeweilige Schlagwort eingegeben werden (**Bild 1**), ein Klick auf "Speichern" schließt die Aktion ab (**Bild 2**) und die [[wp>tag_cloud|Tag-Cloud]] ist um einen neuen //tag// gewachsen. Falls weitere Stichworte hinzugefügt werden sollen, ist ein erneuter Klick auf den "Bearbeiten"-Button notwendig. Nun kann die persönliche Schlagwortliste bei Bedarf um weitere //tags// ergänzt werden (**Bild 4**). Wie häufig die einzelnen Schlagworte zugeordnet wurden, drückt sich aus in der Größe ihrer Darstellung (**Bild 5**). Auf diese Weise können Sie einzelne Seiten also nicht nur schnell wiederfinden, sondern sich darüber hinaus auch ein schnelles Bild über die zentralen Inhalte machen.
+
+Auf Ihrem persönlichen Dashboard finden Sie unter der Übersicht Ihrer [[favoriten|gemerkten Seiten]] ebenfalls die von Ihnen vergeben Tags (**Bild 6**). Ein Klick auf den "Test-Tag" beispielsweise liefert sofort die entsprechend "//getaggte(n)//" Seite(n) (**Bild 7**) und ermöglicht Ihnen eine effiziente Navigation durch den Informationsraum. 
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?tagging*.jpg?lightbox&7?50x50}}
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie Tags vor allem, um Inhalte von langen Seiten kurz und prägnant zu beschreiben.
+  * Nutzen Sie Tags, um sich Seiten zu "merken", die Sie wahrscheinlich selten aufrufen werden und daher nicht in Ihren Favoriten speichern würden.
+  * Nutzen Sie Tags bspw. um sich Ideen oder gute Beispiele zu merken, indem Sie bspw. die Tags "gute Idee" oder "Best Practice Beispiel" verwenden. Sie können so auch Ideensammlungen / Best Practice Sammlungen erzeugen.
+  * Nutzen Sie Tags, um mit eigenen Worten kurz und prägnant für sich selbst und andere Seiteninhalte schnell erfassbar zu machen. 

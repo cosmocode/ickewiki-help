@@ -1,0 +1,47 @@
+====== Grundlagen von ICKEwiki ======
+Hilfe-Navigator: [[start|Übersicht]], **Grundlagen zu ICKEwiki**, [[funktionen|Funktionen von ICKEwiki]]
+
+===== Bildschirmaufbau =====
+Der Aufteilung des ICKEwiki bietet Ihnen direkten Zugriff auf die wichtigsten Daten. Die klare Gliederung hilft dabei, den Überblick zu behalten.
+
+[[screenlayout|Bildschirmaufbau]]
+
+===== Seiten suchen und finden =====
+Es gibt verschiedene Wege, um Informationen im ICKEwiki zu finden: über die Suche, die Übersicht, die Funktion "letzte Änderungen" oder Favoriten.
+
+[[find|Suchen und Finden von Informationen]]
+
+===== Seiten anlegen =====
+Um das Wiki zu erweitern, legen sie einfach neue Dokumente an. Dokument für Dokument, oder per Wizard gleich mehrere in einem Schwung.
+
+[[pagecreate|Dokumente anlegen]]
+
+===== Dokumente bearbeiten =====
+Das Bearbeiten von Dokumenten mit dem Editor ist ganz einfach. Kein Grund zur Sorge: man kann alles wieder rückgängig machen! Texterstellung und Strukturierung, Verlinkung und Bildintegration: hier wird Ihnen gezeigt, wie das geht.
+
+[[editing|Bearbeiten von Dokumenten]]
+
+===== Strukturierung durch Namespaces  =====
+Alle Seiten im Wiki sind hierarchisch in sogenannte "Namespaces" (Namensräume) strukturiert. Hier erfahren Sie, welche Vorteile Namespaces haben und wie man diese verwendet.
+
+[[namespaces|Die Bedeutung der Namespaces]]
+
+===== Der Mediamanager =====
+Ein Bild sagt mehr als tausend Worte - mit dem Mediamanager können Sie bequem und einfach Grafiken und Videos in das Wiki einbinden um Inhalte zu verdeutlichen. Lesen Sie hier nach, wie es funktioniert!
+
+[[mediamanager|Bilder und Videos im ICKEwiki]] 
+
+===== Der Tabelleneditor =====
+Tabellen in Wikis zu erstellen ist häufig eine zeitaufwändige Angelegenheit. Mit dem Tabelleneditor wird das allerdings zum Kinderspiel.
+
+[[tabelleneditor|Der Tabelleneditor]]
+
+===== Automatische Listen =====
+Im ICKEwiki müssen sie nicht jede Verlinkung manuell setzen. Durch den Einsatz des data-plugins können Sie automatisch Listen generieren. Ihr ICKEwiki ist bereits für die wichtigsten Anwendungsfälle vorkonfiguriert.
+
+[[dataplugin|Automatische Listen mit dem data-plugin]]
+
+===== Weitere Editorkommandos =====
+Der Editor kann mehr als die Toolbar zur Verfügung stellt! Lernen sie die Funktionsvielfalt der Wiki-Syntax kennen.
+
+[[editing-ext]]

@@ -1,0 +1,33 @@
+====== Fancysearch Plugin ======
+{{ fancysearch.png?direct|The fancysearch form with an opened namespace dropdown box}}
+The fancysearch plugin provides a dropdown list for common namespaces enhancing the search input.
+
+This (German) screencast shows the plugin in action:
+
+  * [[http://www.youtube.com/watch?v=AfZU-5zpytw|ICKEwiki ScreenCast: Inhaltsverzeichnis, Suche und Kontext-Menus]]
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/fancysearch|git repository]] ([[http://github.com/cosmocode/fancysearch/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The fancysearch plugin needs the [[jquery|jQuery plugin]].
+
+After installation, you have to do much integration work. A first step is to include the fancysearch form in your template:
+
+<code php>
+<?php
+    $namespaces = array('nsid' => array('txt' => 'nscaption', 'img' => 'imglink'));
+    $fancysearch = plugin_load('action', 'fancysearch');
+    if (!is_null($fancysearch)) {
+        $fancysearch->tpl_searchform($namespaces, 'allpagesimg');
+    } else {
+        tpl_searchform();
+    }
+?>&nbsp;
+</code>
+
+You will need much CSS styling as well.

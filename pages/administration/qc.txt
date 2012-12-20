@@ -1,0 +1,80 @@
+====== Quality Check Plugin ======
+{{ http://img534.imageshack.us/img534/2487/qualitydetails.png?nolink&400}}
+
+This plugin automatically analyzes the current page and tries to identify possible problems with the page's structural quality. It doesn't analyze the page content but instead focuses on general good practices in formatting and structuring wiki pages.
+
+The result of the analysis is shown as a quality score. The higher the score, the more problems where found. Additionally the number of FIXMEs is shown next to the quality score.
+
+On clicking the quality info, more detailed information about the identified problems are given along with a few general statistics about the page. Problem descriptions are accompanied by tips on how to fix them.
+
+Quality Scores and %%FIXME%% counts are also shown next to each document in the [[doku>index]].
+
+These two (German) screencasts show the plugin in action:
+
+  * [[http://www.youtube.com/watch?v=eg23yiZRaOI|ICKEwiki ScreenCast: Qualitätssicherungs-Tool]]
+  * [[http://www.youtube.com/watch?v=dfMK3L-zJeo|ICKEwiki ScreenCast: FIXME's]]
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/qc|git repository]] ([[http://github.com/cosmocode/qc/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+After installation you need to put the quality check into your template's ''main.php'' (should be somewhere above the page content):
+
+<code php>
+<?php
+    //Quality Control
+    $qc = plugin_load('helper','qc');
+    $qc->tpl();
+?>
+</code>
+
+===== Configuration =====
+
+The plugin adds a options to the [[doku>config|config manager]] where the look of the quality bar can be adjusted.
+
+You can set the color of the generated text to match your template and choose from different icon sets.
+
+===== Disabling Checks on a Page =====
+
+You can disable the quality check on a page by putting a ''%%~~NOQC~~%%'' macro somewhere into the page.
+
+===== Currently Implemented Checks =====
+
+The following checks are currently used to determine the structural quality:
+
+  - Number of FIXMEs
+  - No Main Headline
+  - Too many Main Headlines
+  - Incorrectly Nested Sections
+  - Many Horizontal Rules
+  - Many Forced Line Breaks
+  - Deeply Nested Quotes
+  - Single Author Only
+  - Very Small Document
+  - Very Large Document
+  - Many Headlines
+  - Few Headlines
+  - No Wiki Links
+  - Many links to non-existing pages
+  - Too much Text Formatting
+  - Long Formatted Passages
+  - Overly Formatted Text
+  - No Backlinks
+
+===== Admin page =====
+
+Moderators and administrators find a quality report on the admin page. This report lists the worst 25 wiki pages known to the quality plugin with their current quality score and %%FIXME%% count. 
+===== Feedback =====
+
+This plugin is still experimental and we need feedback to improve it. Please send feedback either via the issue tracker linked above, or by email to <dokuwiki@cosmocode.de>. We are especially interested in the following questions:
+
+  * What other problems do you often encounter in your Wiki pages that could be detected automatically?
+  * Are current checks sensible or are they too strict or too loose?
+  * Does the plugin help with Wiki Gardening?
+  * Do you need additional GUIs/tools (e.g. aggregation, filters, ...)?
+  * Did structural quality improve after introducing the plugin?
+  * Any other suggestions.

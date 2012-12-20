@@ -1,0 +1,37 @@
+====== Der Tabelleneditor ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Eine Tabelle mit einfacher Wiki-Syntax anzulegen, ist vor allem für ungeübte Benutzer keine leichte Aufgabe. Aus diesem Grund wurde ein Tabelleneditor entwickelt, mit dessen Hilfe Sie eine Tabelle mittels weniger Mausklicks erzeugen können. 
+
+===== Öffnen und Verwenden des Tabelleneditors =====
+
+Es gibt verschiedene Möglichkeiten, innerhalb des ICKEwikis auf den Tabelleneditor zurück zu greifen:
+  * Klick auf den "Bearbeiten"-Button einer bereits existierenden Tabelle (**Bild 1**)
+  * Klick auf den Editor-Button "Neue Tabelle einfügen" {{add_table.png?nolink}} im Seiten-Bearbeitungsmodus (**Bild 2**)
+
+Auf diese oder jene Weise landen Sie in dem Fenster des Tabelleneditors (**Bild 3**). Hier haben Sie neben den bereits aus dem [[editing|Editor]] bekannten Funktionen Auswahl über die folgenden Buttons:
+
+  * {{a_left.png?nolink}}; {{a_center.png?nolink}}; {{a_right.png?nolink}}: Hiermit legen Sie die Textausrichtung innerhalb der jeweiligen Zelle fest (linksbündig, zentriert, rechtsbündig)
+  * {{merge_right.png?nolink}}; {{split_right.png?nolink}}: Mit diesen Buttons können Sie ausgewählte Zellen über **Spalten** hinweg mit benachbarten Zellen ((rechts neben der ausgewählten Zelle)) verbinden und wieder trennen
+  * {{merge_down.png?nolink}}; {{split_down.png?nolink}}: Mit diesen Buttons können Sie ausgewählte Zellen über **Reihen** hinweg mit benachbarten Zellen ((unter der ausgewählten Zelle)) verbinden und wieder trennen
+  * {{row_insert.png?nolink}}; {{row_delete.png?nolink}}: Diese Funktion erlaubt Ihnen, eine neue **Reihe** in Ihre Tabelle einzufügen ((unter der ausgewählten Zelle)) bzw. eine bestehende zu entfernen.
+  * {{column_add.png?nolink}}; {{column_delete.png?nolink}}: Diese Funktion erlaubt Ihnen, eine neue **Spalte** in Ihre Tabelle einzufügen ((rechts neben der ausgewählten Zelle)) bzw. eine bestehende zu entfernen.
+
+Diese Funktionen helfen Ihnen bei der Erstellung von Tabellen, da Sie nicht auf die Benutzung der aufwendigeren Wiki-Syntax angewiesen sind. Zum Vergleich erstellen wir eine einfache Tabelle mit dem Editor:
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?tabedit_*.jpg&50x50&crop&lightbox&6}}
+
+**Codebeispiel:** Zum Vergleich: Die aufgebaute Tabelle in Wiki-Syntax.
+<code>
+^ Komponente    ^ Kosten   ^ Anzahl    ^
+| Komponente A  | 357,99€  | 10 Stück  |
+| Komponente B  |  49,99€  | 15 Stück  |
+| Komponente C  |   :::    | 20 Stück  |
+</code>
+
+===== Tipps und Hinweise =====
+  * Innerhalb von Tabellen stehen die normalen Bearbeitungs- und Markierungsfunktionen zur Verfügung. 
+  * Überlegen Sie sich, für welche Informationen tatsächlich Tabellen notwendig sind. Viele Dinge lassen sich oft auch einfach über andere Strukturierungsmöglichkeiten (Überschriften, Aufzählung). 
+  * Wenn Sie sehr umfangreiche Tabellen mit dynamischen Inhalten erstellen, überlegen Sie sich, ob sie dies eher über [[dataplugin|Metadaten-Tabellen]] realisieren, um Pflegeaufwand zu verringern.

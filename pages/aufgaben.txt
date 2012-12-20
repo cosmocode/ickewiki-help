@@ -1,0 +1,58 @@
+====== Die Arbeit mit Aufgaben ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Häufig werden im Wiki Dinge notiert, die erledigt werden müssen. Mit der Funktion //Aufgaben// können Sie einem beliebigen Text als Aufgabe markieren, Mitarbeitern zuordnen und mit einem Fälligkeitstermin versehen. Somit verlieren sie wichtige Dinge nicht aus dem Blick.
+
+{{dashboard_aktiv.png?nolink&50 }}
+Jeder Mitarbeiter kann in seinem [[wp>Dashboard_(software)|Dashboard]] die ihm zugewiesenen, unerledigten Aufgaben oder Aufgaben die man selbst vergeben hat einsehen. 
+
+===== Anlegen und Bearbeiten von Aufgaben =====
+
+Um einen Text im Wiki als Aufgabe zu markieren, müssen Sie die Seite oder den Abschnitt im [[editing|Editor]] öffnen.
+
+Beim Klick auf den Toolbar-Knopf {{do_button.png?nolink}} erhalten Sie ein Popup , in welchem Sie ein Fälligkeitsdatum setzen und die für die Bearbeitung der Aufgabe verantwortlichen Mitarbeiter auswählen können. (**Bild 2-4**)
+
+Datum und Zuständigkeit einer bestehenden Aufgabe können über das gleiche Popup geändert werden. Wählen Sie die gesamte Aufgabendeklaration aus (**Bild 5**) und klicken Sie dann auf den Toolbar-Knopf. 
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+
+{{gallery>:hilfe:?aufgaben*.jpg&50x50&crop&lightbox}}
+
+
+**Codebeispiel:** Liste mit Anweisungen, die erste ist als Aufgabe deklariert
+
+<code>
+Für die Projektfinalisierung ist noch zu erledigen
+  * <do 2010-07-31 nutzername>Administrationshandbuch aktualisieren</do> 
+  * Qualitätsprotokoll anfertigen
+  * Testergebnisse auswerten
+</code>
+===== Anzeigen und Schließen von Aufgaben =====
+
+Aufgaben werden automatisch in der Seite angezeigt, wo sie angelegt worden sind. Ein einfacher Klick genügt, um die Aufgabe als bearbeitet zu markieren; bei Bedarf kann noch ein Kommentar hinzugefügt werden.
+
+Außerderm können Aufgaben auch über mehrere Seiten hinweg zusammen als Liste dargestellt werden. Hierbei ist es möglich
+  * Die Aufgaben auf einen bestimmten Namespace einzuschränken
+  * Die Aufgaben auf die zugewiesenen Benutzer einzuschränken (parameter user)
+  * Die Aufgaben auf einen Status einzuschränken (parameter status)
+
+**Codebeispiel:** Ausgabe aller Aufgaben im Namespace :meetings:2010:
+<code>
+{{dolist>:meetings:2010}}
+</code>
+
+
+**Codebeispiel:** wie oben, aber nur auf dem Benutzer dhue zugewiesene Aufgaben (**user=dhue**):
+<code>
+{{dolist>:meetings:2010?user=dhue}}
+</code>
+
+**Codebeispiel:** wie oben, aber nur offene (**status=undone**):
+<code>
+{{dolist>:meetings:2010?status=undone}}
+</code>
+===== Tipps und Hinweise =====
+  * Sind mehrere Aufgaben in einer Wikiseite festzulegen, so bietet es sich an, diese in einer Liste aufzuführen.
+  * In der Quelltextansicht der Seite ist nicht ersichtlich, ob eine Aufgabe geschlossen wurde
+  * Bitte beachten Sie: Aufgaben können von jedem Mitarbeiter geschlossen werden, unabhängig davon, ob diese einem Mitarbeiter zugewiesen sind. 
+  * Bedenken Sie: es handelt sich um keine vollwertige Aufgabenverwaltung, wie Sie diese ggf. aus Ihrem Mailprogramm kennen und diese soll auch nicht ersetzen. 

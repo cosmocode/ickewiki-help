@@ -1,0 +1,23 @@
+====== Tasks Plugin ======
+The do plugin allows users to create simple tasks in wiki pages. Those tasks may be assigned to other users and have a due date. Tasks can be listed in pages as well.
+
+===== Download and Installation =====
+
+Download and install the plugin using the [[doku>plugin:plugin|Plugin Manager]] using the following URL:
+
+   * Unstable **development version** from the [[http://github.com/cosmocode/do|git repository]] ([[http://github.com/cosmocode/do/tarball/master|tgz]])
+
+Refer to [[doku>Plugins]] on how to install plugins manually.
+
+The do plugin needs the [[sqlite|SQLite plugin]]. The toolbar button uses the calendar and user autocompletion from the [[doku>plugin:bureaucracy|Bureaucracy plugin]], if present.
+
+===== Usage =====
+
+There are two new syntax elements:
+
+  * ''%%<do USER DATE>TEXT</do>%%'': Create a new task ''TEXT'', optionally assign it to ''USER'' or mark it as due on ''DATE''; there is a toolbar button for this as well.
+  * ''%%{{dolist>NAMESPACE?id=ID&status=(DONE|UNDONE)&limit=COUNT&md5=MD5&user=ASSIGNEE&creator=CREATOR}}%%'': List tasks in ''NAMESPACE'' with optional additional filtering
+
+===== Configuration =====
+
+The plugin adds an option to the [[doku>config|config manager]], ''userpage''. With it you may optionally specify a printf string for constructing IDs of user pages.

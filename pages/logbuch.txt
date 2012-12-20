@@ -1,0 +1,39 @@
+====== Logbücher ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Für die Unterstützung der Dokumentation dynamischer Änderungen (wie Rahmenbedingungen, Status, etc.) im Verlauf von Projekten oder innerhalb anderer Wiki-Dokumente bietet ICKEwiki die sogenannte Logbuch Funktion: über eine schmale Eingabezeile können schnell und komfortabel Fortschritte dokumentiert und Informationen an die entsprechenden Verantwortlichen verteilt werden. Hier erfahren Sie, wie das geht.    
+===== Einfügen eines Logbuches =====
+
+Um ein Logbuch (kurz: "//Log//") in eine Wiki-Seite einzubinden, genügt eine simple Zeile Code (sh. unteres Codebeispiel). Platzieren Sie diese Zeile, wo immer sie den Logbuch-Bereich für angemessen postiert halten. Die Logbücher auf Projektseiten beispielsweise werden übrigens beim Anlegen der Projekte automatisch erstellt (sofern Projekte in Ihrer Wiki-Instanz implementiert sind). In vielen Fällen werden Sie diese Funktion daher bereits eingebunden vorfinden und müssen nur selten "manuell" ein Logbuch anlegen.
+
+{{log}}
+
+**Codebeispiel:** Um von ein Logbuch auf einer Seite einzufügen, genügt die folgende Zeile Code:
+<code>
+{{log}}
+</code>
+
+
+===== Dem Logbuch Einträge hinzufügen =====
+
+Ein Beispiel für ein Logbuch ist in **Bild 1** dargestellt: in einem Projekt wurden bereits die Zusammenstellung des Projektteams und die Planung des Kick-Off Meetings dokumentiert. Um nun einen weiteren Eintrag hinzuzufügen, genügt ein Klick in die Eingabezeile. Nach dem Eintippen des entsprechenden Textes schließt ein Klick auf "Speichern" den Vorgang ab (**Bild 2**). Das Ergebnis ist in **Bild 3** dargestellt: der entsprechende Eintrag ist im Logbuch gelandet und wurde mit Meta-Informationen angereichert (Autorenname, Datum und Uhrzeit). Um die angezeigten Informationen auf den Projekt-, Mitarbeiter und Kunden-Seiten auf das Wesentliche zu beschränken, werden stets nur die fünf aktuellsten Einträge dargestellt. Im nächsten Abschnitt erfahren Sie daher (unter anderem), wie Sie zu einer Übersichtsseite gelangen, auf der alle Einträge des entsprechenden Logbuches aufgelistet sind.
+===== Einträge editieren =====
+
+Falls versehentlich falsche Informationen eingegeben wurden oder sich bestimmte Rahmenbedingungen ändern, existiert (wie üblich innerhalb des ICKEwikis) die Möglichkeit, alle Änderungen rückgängig zu machen bzw. zu überarbeiten. Nach einem Klick auf "Vollständiges Log anzeigen" am unteren Ende des Logbuches (**Bild 4**) gelangt man in die Übersicht. Hier können die Einträge wie gewohnt mit einem Klick auf "Seite bearbeiten" angepasst werden (**Bild 5** & **Bild 6**). 
+
+**Schritt für Schritt:** (Bitte klicken Sie auf ein Bild)
+{{gallery>:hilfe:?log*.jpg?lightbox&6?50x50}}
+
+**Codebeispiel:** Die Wiki-Syntax des dargestellten Logbuches
+<code>
+====== Logbuch ======
+
+  * 2010-09-13 13:20 [[allgemeines:user:ewitt:|Elvis Witt]]: Anforderungsanalyse begonnen
+  * 2010-06-08 15:58 [[allgemeines:user:ccole:|Colt Cole]]: [[.:meeting:kickoff|Kickoff-Meeting]] geplant
+  * 2010-06-07 15:57 [[allgemeines:user:kjarvis:|Kai Jarvis]]: Projektteam ist zusammengestellt
+</code>
+===== Tipps und Hinweise =====
+  * Da //backlinks// (Hyperlinks zu der Ausgangsseite) bei Wikis einen funktionalen Engpass darstellen, empfiehlt es sich, die Übersichtsseite des Log-Buches stets in einem neuen Fenster / neuen Tab zu öffnen
+  * Logbücher eignen sich vor allem für kurze Statusinformationen: Schreiben Sie hier keine Romane.
+  * Fügen Sie Logbücher auf Seiten ein, bei denen Informationen in chronologischer Reihenfolge (aktuellste Information steht oben) festgehalten werden müssen.
+  * Die Logbuch-Funktion orientiert sich an gängigen Kurzmitteilungskonzepten wie beispielsweise  [[wp>microblogging]].

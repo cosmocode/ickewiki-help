@@ -1,0 +1,29 @@
+====== FIXMEs ======
+Hilfe-Navigator: [[start|Übersicht]], [[grundlagen|Grundlagen zu ICKEwiki]], [[funktionen|Funktionen von ICKEwiki]]
+
+Ein jeder Benutzer des Wikis ist angehalten, Fehler auf Wiki-Seiten zu korrigieren um somit die Qualität des Wikis permanent zu erhöhen. In manchen Fällen jedoch lässt sich als Autor bereits absehen, dass Textabschnitte unvollständig oder fehlerhaft sind. Im ICKEwiki gibt es daher eine Funktion, um Inhalte dieser Art für andere Benutzer herauszustellen und diese ggf. darauf hinzuweisen, dass Informationen ergänzt werden müssen.  
+
+===== Sinn und Zweck von FIXME's =====
+
+Um einen Abschnitt als "fehlerhaft" bzw. "unvollständig" zu erklären, kann dieser mit der sogenannten "<nowiki>FIXME</nowiki>-Marke"((aus dem Englischen: "Fix me!" = "Repariere mich!")) versehen werden. Schreiben Sie dazu einfach die Zeichen <nowiki>FIXME</nowiki> hinter den entsprechenden Abschnitt, oder klicken Sie alternativ auf das Smiley-Icon ({{smiley.png?nolink}}) und anschließend auf das <nowiki>FIXME</nowiki>-Symbol ({{fixme.gif?nolink}}).
+
+**Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
+
+{{youtube>dfMK3L-zJeo?medium}}
+
+
+**Beispiel:**\\
+__Thema des Meetings:__ Design-Planung \\
+__Termin:__ {{fixme.gif?nolink}}
+
+**Codebeispiel:** Die Wiki-Syntax des obigen Beispiels. 
+<code>
+__Thema des Meetings:__ Design-Planung \\
+__Termin:__ FIXME
+</code>
+
+===== Tipps und Hinweise =====
+  * Nutzen Sie FIXMEs als Platzhalter für noch zu vergebende Informationen, wie Termine oder Verantwortliche
+  * Nutzen Sie FIXMEs als Hinweis auf unsicheren Stellen in eigenen Seiten - für andere Nutzer als auch für sich selbst als Erinnerung
+  * Nutzen Sie FIXMEs als konstruktive Hinweise auf Seiten fremder Autoren
+  * Alternativ können Sie auch [[hilfe:aufgaben|Aufgaben]] nutzen, um direkt Autoren zu bestimmen, die bestimmte Textpassagen anpassen sollen.
