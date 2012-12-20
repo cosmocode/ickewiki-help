@@ -12,7 +12,7 @@ Um eine Seite als Favorit hinzuzufügen, ist prinzipiell nur ein einziger Klick 
 
 **Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
 
-{{youtube>3PeTj8Syf6I?medium}}
+{{http://www.youtube.com/v/3PeTj8Syf6I?.swf?420x315}}
 
 ===== Tipps und Hinweise =====
   * Nutzen Sie Favoriten vor allem für Seiten, zu denen ein langer Navigationsweg besteht.

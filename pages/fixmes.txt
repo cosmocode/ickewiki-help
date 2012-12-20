@@ -9,8 +9,7 @@ Um einen Abschnitt als "fehlerhaft" bzw. "unvollständig" zu erklären, kann die
 
 **Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
 
-{{youtube>dfMK3L-zJeo?medium}}
-
+{{http://www.youtube.com/v/dfMK3L-zJeo?.swf?420x315}}
 
 **Beispiel:**\\
 __Thema des Meetings:__ Design-Planung \\

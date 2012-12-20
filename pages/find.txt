@@ -31,7 +31,9 @@ Neben diesen existieren noch die folgenden Möglichkeiten (nähere Informationen
   * **Aufnahme einzelner Seiten in die Liste der persönlichen Favoriten:** Es gibt eine weitere Möglichkeit, einen schnellen Zugang zu den individuellen Artikeln im Wiki zu bekommen, die für Sie als Benutzer relevant sind. Dies geschieht, indem Sie durch einen Klick auf das Stern-Symbol in der oberen rechten Ecke des Bildschirms Seiten als Favoriten Ihrem persönlichen Dashboard hinzufügen (siehe auch: [[hilfe:favoriten|Die Benutzung der Favoriten]]).
 
 **Screencast** (Klicken Sie auf das Bild, um das Video zu starten) 
-{{youtube>AfZU-5zpytw?medium}}
+
+{{http://www.youtube.com/v/AfZU-5zpytw?.swf?420x315}}
+
 ===== Tipps und Hinweise =====
   * weitere Hinweise entnehmen Sie bitte den entsprechenden spezifischen Hilfeseiten, siehe: [[hilfe:|Übersicht]]
   * Nutzen Sie die Such- und Navigationsstrategie, die zu Ihnen oder Ihrem aktuellen Anwendungsfall passt:

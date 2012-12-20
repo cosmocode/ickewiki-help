@@ -17,7 +17,8 @@ Die Oberfläche des ICKEwiki gliedert sich in verschiedene Bereiche auf. Neben z
 {{gallery>:hilfe:?screen_*.jpg&50x50&crop&lightbox}}
 
 **Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
-{{youtube>OxvLJAaZ118?medium}}
+
+{{http://www.youtube.com/v/OxvLJAaZ118?.swf?420x315}}
 
 ===== Tipps und Hinweise =====
   * Die Symbole auf der Navigationsleiste können je nach betrieblichen Anforderungen variieren, die Abbildung könnte daher geringfügig von Ihrer Installation abweichen.

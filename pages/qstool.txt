@@ -18,7 +18,8 @@ Folgende Punkte werden negativ bewertet:
   * die Seite enthält [[http://en.wikipedia.org/wiki/Fixme#Tags|FIXME]]-Markierungen zur Kennzeichnung unsicherer Inhalte
 
 **Screencast:** (Klicken Sie auf das Bild, um das Video zu starten)
-{{youtube>eg23yiZRaOI?medium}}
+
+{{http://www.youtube.com/v/eg23yiZRaOI?.swf?420x315}}
 
 ===== Tipps und Hinweise =====
   * Verbessern Sie die Qualität Ihrer Seiten durch eine gute Strukturierung mit einer Haupt- und mehreren Unterüberschriften.

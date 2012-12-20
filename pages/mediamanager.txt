@@ -70,25 +70,6 @@ Die Bedeutung der Icons ist wie folgt:
   * {{trash.png?nolink}} - Löschen der Grafik
   * {{pencil.png?nolink}} - Bearbeiten der Meta-Informationen (wie Name und Beschreibung)
 
-===== Einbinden von Videos =====
-Das ICKEwiki unterstützt ebenso das Einbinden von Videos bekannter Video-Sharing-Seiten, wie beispielsweise der Plattform [[http://www.youtube.com|YouTube]]. 
-
-Dazu sind im Wesentlichen nur 2 Klicks notwendig: 
-  * Sobald sie die URL des entsprechenden Videos in die Zwischenablage kopiert haben (**Bild 10**), klicken Sie auf das Video-Icon ({{vshare_button.png?nolink}}),
-  * fügen Sie die entsprechende Adresse in das aufkommende Fenster ein (**Bild 11**). 
-  * Der zweite Klick auf den "Ok"-Button schließt die Aktion ab, ein mögliches Resultat ist weiter unten auf dieser Seite dargestellt.
-
-{{gallery>:hilfe:?media_5_*.jpg?lightbox?50x50}}
-
-**Codebeispiel:** Wiki-Syntax des unten auf dieser Seite eingebundenen Beispielvideos.
-<code>
-{{youtube>lZKyW-5Se2M?medium}}
-</code>
-
-**Das Beispielvideo:**
-
-{{youtube>lZKyW-5Se2M?medium}}
-
 ===== Tipps und Hinweise =====
   * Mit dem Mediamanager können Sie auch mehrere Bilder gleichzeitig hoch laden. Klicken Sie im Mediamanager auf das Icon: {{multiupload.png?nolink}}
   * Der Umgang mit Dateien und Bildern ist identisch. Nutzen Sie für Dateien ebenfalls den Mediamanager.
